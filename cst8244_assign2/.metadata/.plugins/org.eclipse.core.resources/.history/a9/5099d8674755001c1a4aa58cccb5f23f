@@ -1,0 +1,37 @@
+#!/bin/sh
+#######################################################################
+## - unit-test-b.sh
+## - Assignment 2 - Metronome
+## - @author alir0003@algonquinlive.com
+#######################################################################
+
+echo "********************************************"
+echo "\nUnit Test [A] \n./metronome"
+echo "\nOutput: "
+./metronome
+sleep 10
+
+echo "********************************************"
+echo "\nUnit Test [B] \n./metronome 120 2 4 &"
+echo "\nExpected: metronome runs at [metronome: 120 beats/min, time signature 2/4, secs-per-interval: 0.25, nanoSecs: 250000000]"
+echo "\nOutput: "
+./metronome 120 2 4 &
+sleep 10
+
+echo "********************************************"
+echo "Unit Test [C] \ncat /dev/local/metronome"
+echo "\nExpected: [metronome: 120 beats/min, time signature 2/4, secs-per-interval: 0.25, nanoSecs: 250000000]"
+echo "\nOutput: "
+cat /dev/local/metronome
+sleep 10
+
+echo "********************************************"
+echo "\nUnit Test [D] \nset 100 2 4 > /dev/local/metronome"
+echo "\nExpected: metronome regmgr changes settings to: 100 bpm in 2/4 time; run-time behaviour of metronome changes to 100 bpm in 2/4 time."
+echo "\nOutput: "
+echo set 100 2 4 > /dev/local/metronome
+sleep 10
+
+
+echo quit > /dev/local/metronome
+exit 0

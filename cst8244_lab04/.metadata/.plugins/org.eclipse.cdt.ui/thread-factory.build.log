@@ -1,0 +1,11 @@
+14:25:39 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+
+14:25:41 Build Finished (took 2s.379ms)
+

@@ -1,0 +1,18 @@
+#include <iostream>
+#include<sys/wait.h>
+#include <pthread.h>
+#include <semaphore.h>
+#include <fcntl.h>
+#include <unistd.h>
+using namespace std;
+sem_t *sem;
+
+void* foo(void *arg) {
+   cout<<"This is thread: " << pthread_self()<<endl;
+}
+
+int main() {
+	int numWakeup;
+
+	return 0;
+}

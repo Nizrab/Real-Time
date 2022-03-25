@@ -1,0 +1,42 @@
+#!/bin/sh
+#######################################################################
+## - unit-test-b.sh
+## - Assignment 2 - Metronome
+## - @author alir0003@algonquinlive.com
+#######################################################################
+
+echo "********************************************"
+echo "Unit Test [A] \n./metronome"
+echo "\nOutput: "
+./metronome
+sleep 10
+
+echo "********************************************"
+echo "Unit Test [B] \n./metronome 120 2 4 &"
+echo "Expected: metronome runs at [metronome: 120 beats/min, time signature 2/4, secs-per-interval: 0.25, nanoSecs: 250000000]"
+echo "\nOutput: "
+./metronome 120 2 4 &
+sleep 10
+
+echo "********************************************"
+echo "Unit Test [C] \nset 100 2 4 > /dev/local/metronome"
+echo "Expected: metronome regmgr changes settings to: 100 bpm in 2/4 time; run-time behaviour of metronome changes to 100 bpm in 2/4 time."
+echo "\nOutput: "
+echo set 100 2 4 > /dev/local/metronome
+sleep 10
+
+echo "********************************************"
+echo "Unit Test [D] \n cat /dev/local/metronome"
+echo "Expected: metronome regmgr changes settings to: 100 bpm in 2/4 time; run-time behaviour of metronome changes to 100 bpm in 2/4 time."
+echo "\nOutput: "
+cat /dev/local/metronome
+sleep 10
+
+echo "********************************************"
+echo "Unit Test [E] \nset 200 5 4 > /dev/local/metronome"
+echo "Expected: metronome regmgr changes settings to: 100 bpm in 2/4 time; run-time behaviour of metronome changes to 100 bpm in 2/4 time."
+echo "\nOutput: "
+cat /dev/local/metronome
+sleep 10
+echo quit > /dev/local/metronome
+exit 0

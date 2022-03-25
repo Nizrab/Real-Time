@@ -1,0 +1,23 @@
+/*
+ * metronome.h
+ *
+ *  Created on: Nov 30, 2021
+ *      Author: Barzi
+ */
+
+#ifndef SRC_METRONOME_H_
+#define SRC_METRONOME_H_
+
+struct ioattr_t;
+#define IOFUNC_ATTR_T struct ioattr_t
+struct metro_ocb;
+#define IOFUNC_OCB_T struct metro_ocb
+
+#define METRO_CONNECT  "Metronome"
+
+typedef union {
+	struct _pulse pulse;
+	char msg[255];
+}my_message_t;
+
+#endif /* METRONOME_H_ */

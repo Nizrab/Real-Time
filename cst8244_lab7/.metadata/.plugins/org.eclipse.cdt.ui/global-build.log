@@ -1,0 +1,509 @@
+11:44:17 **** Build of configuration x86_64-debug for project myController ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myController.d,-MT,build/x86_64-debug/src/myController.o -o build/x86_64-debug/src/myController.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myController.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myController   build/x86_64-debug/src/myController.o  
+11:44:31 **** Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myDevice   build/x86_64-debug/src/myDevice.o  
+16:01:22 **** Incremental Build of configuration x86_64-debug for project myController ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myController.d,-MT,build/x86_64-debug/src/myController.o -o build/x86_64-debug/src/myController.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myController.c
+src/myController.c: In function 'main':
+src/myController.c:21:6: warning: unused variable 'rcvid' [-Wunused-variable]
+  int rcvid;
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myController   build/x86_64-debug/src/myController.o  
+16:01:39 **** Incremental Build of configuration x86_64-debug for project myController ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myController.d,-MT,build/x86_64-debug/src/myController.o -o build/x86_64-debug/src/myController.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myController.c
+src/myController.c: In function 'main':
+src/myController.c:44:8: error: 'true' undeclared (first use in this function)
+  while(true){
+        ^
+src/myController.c:44:8: note: each undeclared identifier is reported only once for each function it appears in
+src/myController.c:21:6: warning: unused variable 'rcvid' [-Wunused-variable]
+  int rcvid;
+      ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/myController.o' failed
+make: *** [build/x86_64-debug/src/myController.o] Error 1
+16:01:43 **** Incremental Build of configuration x86_64-debug for project myController ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myController.d,-MT,build/x86_64-debug/src/myController.o -o build/x86_64-debug/src/myController.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myController.c
+src/myController.c: In function 'main':
+src/myController.c:21:6: warning: unused variable 'rcvid' [-Wunused-variable]
+  int rcvid;
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myController   build/x86_64-debug/src/myController.o  
+17:18:06 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+src/myDevice.c:18:52: error: unknown type name 'Timeocb_t'
+ int io_read(resmgr_context_t *ctp, io_read_t *msg, Timeocb_t *tocb)
+                                                    ^
+src/myDevice.c: In function 'main':
+src/myDevice.c:85:6: warning: unused variable 'id' [-Wunused-variable]
+  int id;
+      ^
+src/myDevice.c:84:24: warning: unused variable 'ctp' [-Wunused-variable]
+  dispatch_context_t   *ctp;
+                        ^
+src/myDevice.c:83:16: warning: unused variable 'ioattr' [-Wunused-variable]
+  iofunc_attr_t ioattr;
+                ^
+src/myDevice.c:82:25: warning: unused variable 'connect_funcs' [-Wunused-variable]
+  resmgr_connect_funcs_t connect_funcs;
+                         ^
+src/myDevice.c:81:20: warning: unused variable 'io_funcs' [-Wunused-variable]
+  resmgr_io_funcs_t io_funcs;
+                    ^
+src/myDevice.c:80:14: warning: unused variable 'dpp' [-Wunused-variable]
+  dispatch_t* dpp;
+              ^
+src/myDevice.c: In function 'io_open':
+src/myDevice.c:77:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/myDevice.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/myDevice.o' failed
+17:18:32 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+src/myDevice.c: In function 'io_read':
+src/myDevice.c:25:6: error: 'tocb' undeclared (first use in this function)
+  if (tocb->ocb.attr->device == HNow) {
+      ^
+src/myDevice.c:25:6: note: each undeclared identifier is reported only once for each function it appears in
+src/myDevice.c:25:32: error: 'HNow' undeclared (first use in this function)
+  if (tocb->ocb.attr->device == HNow) {
+                                ^
+src/myDevice.c:27:39: error: 'HHour' undeclared (first use in this function)
+  } else if (tocb->ocb.attr->device == HHour) {
+                                       ^
+src/myDevice.c: In function 'main':
+src/myDevice.c:85:6: warning: unused variable 'id' [-Wunused-variable]
+  int id;
+      ^
+src/myDevice.c:84:24: warning: unused variable 'ctp' [-Wunused-variable]
+  dispatch_context_t   *ctp;
+                        ^
+src/myDevice.c:83:16: warning: unused variable 'ioattr' [-Wunused-variable]
+  iofunc_attr_t ioattr;
+                ^
+src/myDevice.c:82:25: warning: unused variable 'connect_funcs' [-Wunused-variable]
+  resmgr_connect_funcs_t connect_funcs;
+                         ^
+src/myDevice.c:81:20: warning: unused variable 'io_funcs' [-Wunused-variable]
+  resmgr_io_funcs_t io_funcs;
+                    ^
+src/myDevice.c:80:14: warning: unused variable 'dpp' [-Wunused-variable]
+  dispatch_t* dpp;
+              ^
+src/myDevice.c: In function 'io_open':
+src/myDevice.c:77:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/myDevice.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/myDevice.o' failed
+17:18:49 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+src/myDevice.c: In function 'io_read':
+src/myDevice.c:34:14: error: 'tocb' undeclared (first use in this function)
+  nb = strlen(tocb->buffer);
+              ^
+src/myDevice.c:34:14: note: each undeclared identifier is reported only once for each function it appears in
+src/myDevice.c:22:13: warning: unused variable 'tm' [-Wunused-variable]
+  struct tm *tm = localtime(&time_of_day);
+             ^
+src/myDevice.c: In function 'main':
+src/myDevice.c:85:6: warning: unused variable 'id' [-Wunused-variable]
+  int id;
+      ^
+src/myDevice.c:84:24: warning: unused variable 'ctp' [-Wunused-variable]
+  dispatch_context_t   *ctp;
+                        ^
+src/myDevice.c:83:16: warning: unused variable 'ioattr' [-Wunused-variable]
+  iofunc_attr_t ioattr;
+                ^
+src/myDevice.c:82:25: warning: unused variable 'connect_funcs' [-Wunused-variable]
+  resmgr_connect_funcs_t connect_funcs;
+                         ^
+src/myDevice.c:81:20: warning: unused variable 'io_funcs' [-Wunused-variable]
+  resmgr_io_funcs_t io_funcs;
+                    ^
+src/myDevice.c:80:14: warning: unused variable 'dpp' [-Wunused-variable]
+  dispatch_t* dpp;
+              ^
+src/myDevice.c: In function 'io_open':
+src/myDevice.c:77:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/myDevice.o' failed
+make: *** [build/x86_64-debug/src/myDevice.o] Error 1
+17:19:10 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+src/myDevice.c: In function 'io_read':
+src/myDevice.c:37:6: error: 'tocb' undeclared (first use in this function)
+  if (tocb->ocb.offset == nb)
+      ^
+src/myDevice.c:37:6: note: each undeclared identifier is reported only once for each function it appears in
+src/myDevice.c:22:13: warning: unused variable 'tm' [-Wunused-variable]
+  struct tm *tm = localtime(&time_of_day);
+             ^
+src/myDevice.c: In function 'main':
+src/myDevice.c:85:6: warning: unused variable 'id' [-Wunused-variable]
+  int id;
+      ^
+src/myDevice.c:84:24: warning: unused variable 'ctp' [-Wunused-variable]
+  dispatch_context_t   *ctp;
+                        ^
+src/myDevice.c:83:16: warning: unused variable 'ioattr' [-Wunused-variable]
+  iofunc_attr_t ioattr;
+                ^
+src/myDevice.c:82:25: warning: unused variable 'connect_funcs' [-Wunused-variable]
+  resmgr_connect_funcs_t connect_funcs;
+                         ^
+src/myDevice.c:81:20: warning: unused variable 'io_funcs' [-Wunused-variable]
+  resmgr_io_funcs_t io_funcs;
+                    ^
+src/myDevice.c:80:14: warning: unused variable 'dpp' [-Wunused-variable]
+  dispatch_t* dpp;
+              ^
+src/myDevice.c: In function 'io_open':
+src/myDevice.c:77:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/myDevice.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/myDevice.o' failed
+17:19:36 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+In file included from src/myDevice.c:6:0:
+src/myDevice.c: In function 'io_read':
+src/myDevice.c:46:19: error: 'tocb' undeclared (first use in this function)
+  SETIOV(ctp->iov, tocb->buffer, nb);
+                   ^
+src/myDevice.c:46:19: note: each undeclared identifier is reported only once for each function it appears in
+src/myDevice.c:22:13: warning: unused variable 'tm' [-Wunused-variable]
+  struct tm *tm = localtime(&time_of_day);
+             ^
+src/myDevice.c: In function 'main':
+src/myDevice.c:84:6: warning: unused variable 'id' [-Wunused-variable]
+  int id;
+      ^
+src/myDevice.c:83:24: warning: unused variable 'ctp' [-Wunused-variable]
+  dispatch_context_t   *ctp;
+                        ^
+src/myDevice.c:82:16: warning: unused variable 'ioattr' [-Wunused-variable]
+  iofunc_attr_t ioattr;
+                ^
+src/myDevice.c:81:25: warning: unused variable 'connect_funcs' [-Wunused-variable]
+  resmgr_connect_funcs_t connect_funcs;
+                         ^
+src/myDevice.c:80:20: warning: unused variable 'io_funcs' [-Wunused-variable]
+  resmgr_io_funcs_t io_funcs;
+                    ^
+src/myDevice.c:79:14: warning: unused variable 'dpp' [-Wunused-variable]
+  dispatch_t* dpp;
+              ^
+src/myDevice.c: In function 'io_open':
+src/myDevice.c:76:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/myDevice.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/myDevice.o' failed
+17:19:43 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+src/myDevice.c: In function 'io_read':
+src/myDevice.c:49:2: error: 'tocb' undeclared (first use in this function)
+  tocb->ocb.offset += nb;
+  ^
+src/myDevice.c:49:2: note: each undeclared identifier is reported only once for each function it appears in
+src/myDevice.c:22:13: warning: unused variable 'tm' [-Wunused-variable]
+  struct tm *tm = localtime(&time_of_day);
+             ^
+src/myDevice.c: In function 'main':
+src/myDevice.c:84:6: warning: unused variable 'id' [-Wunused-variable]
+  int id;
+      ^
+src/myDevice.c:83:24: warning: unused variable 'ctp' [-Wunused-variable]
+  dispatch_context_t   *ctp;
+                        ^
+src/myDevice.c:82:16: warning: unused variable 'ioattr' [-Wunused-variable]
+  iofunc_attr_t ioattr;
+                ^
+src/myDevice.c:81:25: warning: unused variable 'connect_funcs' [-Wunused-variable]
+  resmgr_connect_funcs_t connect_funcs;
+                         ^
+src/myDevice.c:80:20: warning: unused variable 'io_funcs' [-Wunused-variable]
+  resmgr_io_funcs_t io_funcs;
+                    ^
+src/myDevice.c:79:14: warning: unused variable 'dpp' [-Wunused-variable]
+  dispatch_t* dpp;
+              ^
+src/myDevice.c: In function 'io_open':
+src/myDevice.c:76:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/myDevice.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/myDevice.o' failed
+17:19:51 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+src/myDevice.c: In function 'io_read':
+src/myDevice.c:52:3: error: 'tocb' undeclared (first use in this function)
+   tocb->ocb.attr->attr.flags |= IOFUNC_ATTR_ATIME;
+   ^
+src/myDevice.c:52:3: note: each undeclared identifier is reported only once for each function it appears in
+src/myDevice.c:22:13: warning: unused variable 'tm' [-Wunused-variable]
+  struct tm *tm = localtime(&time_of_day);
+             ^
+src/myDevice.c: In function 'main':
+src/myDevice.c:83:6: warning: unused variable 'id' [-Wunused-variable]
+  int id;
+      ^
+src/myDevice.c:82:24: warning: unused variable 'ctp' [-Wunused-variable]
+  dispatch_context_t   *ctp;
+                        ^
+src/myDevice.c:81:16: warning: unused variable 'ioattr' [-Wunused-variable]
+  iofunc_attr_t ioattr;
+                ^
+src/myDevice.c:80:25: warning: unused variable 'connect_funcs' [-Wunused-variable]
+  resmgr_connect_funcs_t connect_funcs;
+                         ^
+src/myDevice.c:79:20: warning: unused variable 'io_funcs' [-Wunused-variable]
+  resmgr_io_funcs_t io_funcs;
+                    ^
+src/myDevice.c:78:14: warning: unused variable 'dpp' [-Wunused-variable]
+  dispatch_t* dpp;
+              ^
+src/myDevice.c: In function 'io_open':
+src/myDevice.c:75:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/myDevice.o' failed
+make: *** [build/x86_64-debug/src/myDevice.o] Error 1
+17:19:59 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+src/myDevice.c: In function 'io_read':
+src/myDevice.c:22:13: warning: unused variable 'tm' [-Wunused-variable]
+  struct tm *tm = localtime(&time_of_day);
+             ^
+src/myDevice.c: In function 'main':
+src/myDevice.c:84:6: warning: unused variable 'id' [-Wunused-variable]
+  int id;
+      ^
+src/myDevice.c:83:24: warning: unused variable 'ctp' [-Wunused-variable]
+  dispatch_context_t   *ctp;
+                        ^
+src/myDevice.c:82:16: warning: unused variable 'ioattr' [-Wunused-variable]
+  iofunc_attr_t ioattr;
+                ^
+src/myDevice.c:81:25: warning: unused variable 'connect_funcs' [-Wunused-variable]
+  resmgr_connect_funcs_t connect_funcs;
+                         ^
+src/myDevice.c:80:20: warning: unused variable 'io_funcs' [-Wunused-variable]
+  resmgr_io_funcs_t io_funcs;
+                    ^
+src/myDevice.c:79:14: warning: unused variable 'dpp' [-Wunused-variable]
+  dispatch_t* dpp;
+              ^
+src/myDevice.c: In function 'io_open':
+src/myDevice.c:76:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myDevice   build/x86_64-debug/src/myDevice.o  
+01:30:57 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+src/myDevice.c: In function 'io_read':
+src/myDevice.c:22:13: warning: unused variable 'tm' [-Wunused-variable]
+  struct tm *tm = localtime(&time_of_day);
+             ^
+src/myDevice.c: In function 'main':
+src/myDevice.c:102:6: warning: unused variable 'id' [-Wunused-variable]
+  int id;
+      ^
+src/myDevice.c:101:24: warning: unused variable 'ctp' [-Wunused-variable]
+  dispatch_context_t   *ctp;
+                        ^
+src/myDevice.c:100:16: warning: unused variable 'ioattr' [-Wunused-variable]
+  iofunc_attr_t ioattr;
+                ^
+src/myDevice.c:99:25: warning: unused variable 'connect_funcs' [-Wunused-variable]
+  resmgr_connect_funcs_t connect_funcs;
+                         ^
+src/myDevice.c:98:20: warning: unused variable 'io_funcs' [-Wunused-variable]
+  resmgr_io_funcs_t io_funcs;
+                    ^
+src/myDevice.c:97:14: warning: unused variable 'dpp' [-Wunused-variable]
+  dispatch_t* dpp;
+              ^
+src/myDevice.c: In function 'io_open':
+src/myDevice.c:94:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myDevice   build/x86_64-debug/src/myDevice.o  
+01:31:06 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+src/myDevice.c: In function 'io_read':
+src/myDevice.c:22:13: warning: unused variable 'tm' [-Wunused-variable]
+  struct tm *tm = localtime(&time_of_day);
+             ^
+src/myDevice.c: In function 'main':
+src/myDevice.c:100:6: warning: unused variable 'id' [-Wunused-variable]
+  int id;
+      ^
+src/myDevice.c:99:24: warning: unused variable 'ctp' [-Wunused-variable]
+  dispatch_context_t   *ctp;
+                        ^
+src/myDevice.c:98:16: warning: unused variable 'ioattr' [-Wunused-variable]
+  iofunc_attr_t ioattr;
+                ^
+src/myDevice.c:97:25: warning: unused variable 'connect_funcs' [-Wunused-variable]
+  resmgr_connect_funcs_t connect_funcs;
+                         ^
+src/myDevice.c:96:20: warning: unused variable 'io_funcs' [-Wunused-variable]
+  resmgr_io_funcs_t io_funcs;
+                    ^
+src/myDevice.c:95:14: warning: unused variable 'dpp' [-Wunused-variable]
+  dispatch_t* dpp;
+              ^
+src/myDevice.c: In function 'io_open':
+src/myDevice.c:92:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myDevice   build/x86_64-debug/src/myDevice.o  
+01:33:52 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+src/myDevice.c: In function 'io_read':
+src/myDevice.c:22:13: warning: unused variable 'tm' [-Wunused-variable]
+  struct tm *tm = localtime(&time_of_day);
+             ^
+src/myDevice.c: In function 'main':
+src/myDevice.c:105:6: warning: unused variable 'id' [-Wunused-variable]
+  int id;
+      ^
+src/myDevice.c:104:24: warning: unused variable 'ctp' [-Wunused-variable]
+  dispatch_context_t   *ctp;
+                        ^
+src/myDevice.c:103:16: warning: unused variable 'ioattr' [-Wunused-variable]
+  iofunc_attr_t ioattr;
+                ^
+src/myDevice.c:102:25: warning: unused variable 'connect_funcs' [-Wunused-variable]
+  resmgr_connect_funcs_t connect_funcs;
+                         ^
+src/myDevice.c:101:20: warning: unused variable 'io_funcs' [-Wunused-variable]
+  resmgr_io_funcs_t io_funcs;
+                    ^
+src/myDevice.c:100:14: warning: unused variable 'dpp' [-Wunused-variable]
+  dispatch_t* dpp;
+              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myDevice   build/x86_64-debug/src/myDevice.o  
+01:55:12 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+src/myDevice.c: In function 'io_read':
+src/myDevice.c:22:13: warning: unused variable 'tm' [-Wunused-variable]
+  struct tm *tm = localtime(&time_of_day);
+             ^
+src/myDevice.c: In function 'main':
+src/myDevice.c:108:67: error: 'argv' undeclared (first use in this function)
+   fprintf (stderr, "%s:  Unable to allocate dispatch context.\n", argv [0]);
+                                                                   ^
+src/myDevice.c:108:67: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/myDevice.o' failed
+make: *** [build/x86_64-debug/src/myDevice.o] Error 1
+01:55:34 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+src/myDevice.c: In function 'io_read':
+src/myDevice.c:22:13: warning: unused variable 'tm' [-Wunused-variable]
+  struct tm *tm = localtime(&time_of_day);
+             ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myDevice   build/x86_64-debug/src/myDevice.o  
+00:19:27 **** Incremental Build of configuration x86_64-debug for project myController ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myController.d,-MT,build/x86_64-debug/src/myController.o -o build/x86_64-debug/src/myController.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myController.c
+src/myController.c: In function 'main':
+src/myController.c:30:22: error: 'status' undeclared (first use in this function)
+  fscanf(fp, "%s %s", status, msg.msg);
+                      ^
+src/myController.c:30:22: note: each undeclared identifier is reported only once for each function it appears in
+src/myController.c:30:30: error: 'msg' undeclared (first use in this function)
+  fscanf(fp, "%s %s", status, msg.msg);
+                              ^
+src/myController.c:20:19: warning: unused variable 'msg_info' [-Wunused-variable]
+  struct _msg_info msg_info;
+                   ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/myController.o' failed
+make: *** [build/x86_64-debug/src/myController.o] Error 1
+00:19:49 **** Incremental Build of configuration x86_64-debug for project myController ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myController.d,-MT,build/x86_64-debug/src/myController.o -o build/x86_64-debug/src/myController.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myController.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myController   build/x86_64-debug/src/myController.o  
+00:20:33 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myDevice   build/x86_64-debug/src/myDevice.o  
+00:20:46 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myDevice   build/x86_64-debug/src/myDevice.o  
+10:14:04 **** Incremental Build of configuration x86_64-debug for project myController ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+10:14:06 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myDevice   build/x86_64-debug/src/myDevice.o  
+10:36:04 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+src/myDevice.c: In function 'main':
+src/myDevice.c:98:6: warning: unused variable 'id' [-Wunused-variable]
+  int id;
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myDevice   build/x86_64-debug/src/myDevice.o  
+11:38:55 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myDevice   build/x86_64-debug/src/myDevice.o  
+11:45:31 **** Incremental Build of configuration x86_64-debug for project myController ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myController.d,-MT,build/x86_64-debug/src/myController.o -o build/x86_64-debug/src/myController.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myController.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myController   build/x86_64-debug/src/myController.o  
+11:45:51 **** Incremental Build of configuration x86_64-debug for project myController ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+18:31:29 **** Incremental Build of configuration x86_64-debug for project myController ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myController.d,-MT,build/x86_64-debug/src/myController.o -o build/x86_64-debug/src/myController.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myController.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myController   build/x86_64-debug/src/myController.o  
+18:32:28 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myDevice.d,-MT,build/x86_64-debug/src/myDevice.o -o build/x86_64-debug/src/myDevice.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myDevice.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myDevice   build/x86_64-debug/src/myDevice.o  
+18:36:20 **** Incremental Build of configuration x86_64-debug for project myDevice ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+18:38:58 **** Incremental Build of configuration x86_64-debug for project myController ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/myController.d,-MT,build/x86_64-debug/src/myController.o -o build/x86_64-debug/src/myController.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/myController.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/myController   build/x86_64-debug/src/myController.o  

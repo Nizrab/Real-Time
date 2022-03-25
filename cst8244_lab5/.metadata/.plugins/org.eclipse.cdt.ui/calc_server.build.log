@@ -1,0 +1,6 @@
+21:36:27 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+
+21:36:27 Build Finished (took 99ms)
+

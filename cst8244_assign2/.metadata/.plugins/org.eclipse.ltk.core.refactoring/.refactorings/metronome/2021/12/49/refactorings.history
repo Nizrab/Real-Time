@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;metronome/src/acceptance-test.sh&apos; to &apos;acceptance-test.sh.txt&apos;" description="Rename resource &apos;acceptance-test.sh&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/acceptance-test.sh" name="acceptance-test.sh.txt" stamp="1638651269313" updateReferences="true"/>
+</session>

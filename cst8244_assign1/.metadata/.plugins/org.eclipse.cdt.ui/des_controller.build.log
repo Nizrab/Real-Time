@@ -1,0 +1,11 @@
+15:15:18 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:66:9: warning: unused variable 'pid' [-Wunused-variable]
+   pid_t pid; //process id
+         ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+
+15:15:18 Build Finished (took 247ms)
+

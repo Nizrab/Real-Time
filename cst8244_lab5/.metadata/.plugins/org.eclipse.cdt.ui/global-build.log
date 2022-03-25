@@ -1,0 +1,725 @@
+17:35:10 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.cpp
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+17:35:33 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.cpp
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+19:19:53 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.cpp
+In file included from src/calc_server.cpp:9:0:
+src/calc_message.h:14:15: error: expected type-specifier before ';' token
+  char operator;
+               ^
+src/calc_server.cpp: In function 'int main()':
+src/calc_server.cpp:26:36: error: expected type-specifier before ')' token
+    switch( client_message.operator ) {
+                                    ^
+src/calc_server.cpp:39:62: error: 'MsgRepy' was not declared in this scope
+    MsgRepy( rcvid, EOK, &response, sizeof(server_response_t) );
+                                                              ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+19:20:38 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.cpp
+In file included from src/calc_server.cpp:9:0:
+src/calc_message.h:14:15: error: expected type-specifier before ';' token
+  char operator;
+               ^
+src/calc_server.cpp: In function 'int main()':
+src/calc_server.cpp:26:34: error: expected type-specifier before ')' token
+    switch(client_message.operator) {
+                                  ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+19:37:49 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.cpp
+In file included from src/calc_server.cpp:9:0:
+src/calc_message.h:14:15: error: expected type-specifier before ';' token
+  char operator;
+               ^
+src/calc_server.cpp: In function 'int main()':
+src/calc_server.cpp:26:34: error: expected type-specifier before ')' token
+    switch(client_message.operator) {
+                                  ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+19:38:54 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.cpp
+In file included from src/calc_server.cpp:9:0:
+src/calc_message.h:14:15: error: expected type-specifier before ';' token
+  char operator;
+               ^
+src/calc_server.cpp: In function 'int main()':
+src/calc_server.cpp:26:35: error: 'client_send_t {aka struct client_send}' has no member named 'operator()'
+    switch(client_message.operator()) {
+                                   ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+19:39:01 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.cpp
+In file included from src/calc_server.cpp:9:0:
+src/calc_message.h:14:15: error: expected type-specifier before ';' token
+  char operator;
+               ^
+src/calc_server.cpp: In function 'int main()':
+src/calc_server.cpp:26:34: error: expected type-specifier before ')' token
+    switch(client_message.operator) {
+                                  ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+19:41:49 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.cpp
+In file included from src/calc_server.cpp:9:0:
+src/calc_message.h:14:15: error: expected type-specifier before ';' token
+  char operator;
+               ^
+src/calc_server.cpp: In function 'int main()':
+src/calc_server.cpp:26:34: error: expected type-specifier before ')' token
+    switch(client_message.operator) {
+                                  ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+19:43:34 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+19:43:50 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+19:45:18 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c:12:1: error: unknown type name 'using'
+ using namespace std;
+ ^
+src/calc_client.c:12:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'std'
+ using namespace std;
+                 ^
+src/calc_client.c: In function 'main':
+src/calc_client.c:14:2: error: unknown type name 'client_sent_t'
+  client_sent_t msg_send;
+  ^
+src/calc_client.c:16:11: error: 'argc' undeclared (first use in this function)
+  if (5 != argc) {
+           ^
+src/calc_client.c:16:11: note: each undeclared identifier is reported only once for each function it appears in
+src/calc_client.c:15:20: warning: unused variable 'msg_receive' [-Wunused-variable]
+  server_response_t msg_receive;
+                    ^
+src/calc_client.c:14:16: warning: unused variable 'msg_send' [-Wunused-variable]
+  client_sent_t msg_send;
+                ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_client.o' failed
+make: *** [build/x86_64-debug/src/calc_client.o] Error 1
+19:45:23 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c:10:1: error: unknown type name 'using'
+ using namespace std;
+ ^
+src/calc_server.c:10:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'std'
+ using namespace std;
+                 ^
+src/calc_server.c: In function 'main':
+src/calc_server.c:23:8: error: 'true' undeclared (first use in this function)
+  while(true){
+        ^
+src/calc_server.c:23:8: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+19:45:30 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c:10:1: error: unknown type name 'using'
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+ using namespace std;
+ ^
+src/calc_server.c:10:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'std'
+ using namespace std;
+                 ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+20:13:42 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:14:2: error: unknown type name 'client_sent_t'
+  client_sent_t msg_send;
+  ^
+src/calc_client.c:24:10: error: request for member 'left_hand' in something not a structure or union
+  msg_send.left_hand = atoi(argv[2]);
+          ^
+src/calc_client.c:25:10: error: request for member 'operator' in something not a structure or union
+  msg_send.operator = atoi(argv[3]);
+          ^
+src/calc_client.c:26:10: error: request for member 'right_hand' in something not a structure or union
+  msg_send.right_hand = atoi(argv[4]);
+          ^
+src/calc_client.c:43:13: error: request for member 'left_hand' in something not a structure or union
+     msg_send.left_hand, msg_send.operator, msg_send.right_hand,
+             ^
+src/calc_client.c:43:33: error: request for member 'operator' in something not a structure or union
+     msg_send.left_hand, msg_send.operator, msg_send.right_hand,
+                                 ^
+src/calc_client.c:43:52: error: request for member 'right_hand' in something not a structure or union
+     msg_send.left_hand, msg_send.operator, msg_send.right_hand,
+                                                    ^
+src/calc_client.c:46:78: error: request for member 'operator' in something not a structure or union
+   printf("Error message from server: %s %c\n", msg_receive.errorMsg, msg_send.operator);
+                                                                              ^
+src/calc_client.c:49:84: error: request for member 'left_hand' in something not a structure or union
+   printf("Error message from server: %s %d %c %d\n", msg_receive.errorMsg, msg_send.left_hand,msg_send.operator, msg_send.right_hand);
+                                                                                    ^
+src/calc_client.c:49:103: error: request for member 'operator' in something not a structure or union
+   printf("Error message from server: %s %d %c %d\n", msg_receive.errorMsg, msg_send.left_hand,msg_send.operator, msg_send.right_hand);
+                                                                                                       ^
+src/calc_client.c:49:122: error: request for member 'right_hand' in something not a structure or union
+   printf("Error message from server: %s %d %c %d\n", msg_receive.errorMsg, msg_send.left_hand,msg_send.operator, msg_send.right_hand);
+                                                                                                                          ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_client.o' failed
+make: *** [build/x86_64-debug/src/calc_client.o] Error 1
+20:14:54 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:14:2: error: unknown type name 'client_sent_t'
+  client_sent_t msg_send;
+  ^
+src/calc_client.c:24:10: error: request for member 'left_hand' in something not a structure or union
+  msg_send.left_hand = atoi(argv[2]);
+          ^
+src/calc_client.c:25:10: error: request for member 'operator' in something not a structure or union
+  msg_send.operator = atoi(argv[3]);
+          ^
+src/calc_client.c:26:10: error: request for member 'right_hand' in something not a structure or union
+  msg_send.right_hand = atoi(argv[4]);
+          ^
+src/calc_client.c:43:13: error: request for member 'left_hand' in something not a structure or union
+     msg_send.left_hand, msg_send.operator, msg_send.right_hand,
+             ^
+src/calc_client.c:43:33: error: request for member 'operator' in something not a structure or union
+     msg_send.left_hand, msg_send.operator, msg_send.right_hand,
+                                 ^
+src/calc_client.c:43:52: error: request for member 'right_hand' in something not a structure or union
+     msg_send.left_hand, msg_send.operator, msg_send.right_hand,
+                                                    ^
+src/calc_client.c:46:78: error: request for member 'operator' in something not a structure or union
+   printf("Error message from server: %s %c\n", msg_receive.errorMsg, msg_send.operator);
+                                                                              ^
+src/calc_client.c:49:84: error: request for member 'left_hand' in something not a structure or union
+   printf("Error message from server: %s %d %c %d\n", msg_receive.errorMsg, msg_send.left_hand,msg_send.operator, msg_send.right_hand);
+                                                                                    ^
+src/calc_client.c:49:103: error: request for member 'operator' in something not a structure or union
+   printf("Error message from server: %s %d %c %d\n", msg_receive.errorMsg, msg_send.left_hand,msg_send.operator, msg_send.right_hand);
+                                                                                                       ^
+src/calc_client.c:49:122: error: request for member 'right_hand' in something not a structure or union
+   printf("Error message from server: %s %d %c %d\n", msg_receive.errorMsg, msg_send.left_hand,msg_send.operator, msg_send.right_hand);
+                                                                                                                          ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_client.o' failed
+make: *** [build/x86_64-debug/src/calc_client.o] Error 1
+20:15:10 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+20:15:27 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:15:27 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:18:14 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:19:22: error: 'attach' undeclared (first use in this function)
+   rcvid = MsgReceive(attach->chid, &client_message,
+                      ^
+src/calc_server.c:19:22: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+20:19:50 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+20:19:50 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:19:23: error: 'chid' undeclared (first use in this function)
+   rcvid = MsgReceive( chid, &client_message, sizeof(client_message), NULL );
+                       ^
+src/calc_server.c:19:23: note: each undeclared identifier is reported only once for each function it appears in
+src/calc_server.c:60:14: error: 'attach' undeclared (first use in this function)
+  name_detach(attach, 0);
+              ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+20:20:26 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:60:14: error: 'attach' undeclared (first use in this function)
+  name_detach(attach, 0);
+              ^
+src/calc_server.c:60:14: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/calc_server.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/calc_server.o' failed
+20:21:29 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:60:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+20:21:38 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:24:41 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:24:44 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+20:24:51 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:25:02 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+20:25:02 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:25:17 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:27:16 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:27:16 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:27:20 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+20:27:20 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:60:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+20:27:37 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:29:43 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:29:43 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:29:48 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+20:29:48 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:60:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+20:30:06 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:33:27 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:33:27 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:33:29 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+20:33:29 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:61:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+20:33:41 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:33:57 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:34:16 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:34:16 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:34:18 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+20:34:18 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:60:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+20:34:38 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:36:12 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:36:12 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:36:14 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+20:36:14 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:61:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+20:36:22 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:37:48 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:23:8: warning: unused variable 'serverpid' [-Wunused-variable]
+  pid_t serverpid = atoi(argv[1]);
+        ^
+src/calc_client.c:32:2: warning: 'coid' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  MsgSend(coid, &msg_send, sizeof(msg_send), &msg_receive,
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+20:37:50 **** Incremental Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:38:33 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:38:34 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:38:37 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+src/calc_client.c: In function 'main':
+src/calc_client.c:28:9: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  printf(serverpid);
+         ^
+In file included from src/calc_client.c:1:0:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/stdio.h:176:12: note: expected 'const char *' but argument is of type 'pid_t {aka int}'
+ extern int printf(const char *__format, ...);
+            ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+20:38:37 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:61:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+20:38:57 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:39:40 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:39:41 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:39:45 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+20:39:45 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:61:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+20:40:01 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:41:28 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:41:28 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:41:31 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+20:41:31 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:61:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+20:41:37 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:45:22 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:45:23 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:45:24 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+20:45:25 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:61:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+20:45:38 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:46:34 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:46:34 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:46:37 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+20:46:37 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:61:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+20:46:45 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:58:43 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:58:44 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:58:46 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+20:58:46 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:60:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+20:58:55 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:59:39 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:59:39 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+20:59:41 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+20:59:41 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:60:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+20:59:52 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+21:01:20 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+21:01:20 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+21:01:22 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+21:01:22 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:60:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+21:01:32 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+21:03:11 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+21:03:11 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+21:03:12 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+21:03:13 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:60:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+21:03:25 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+21:04:46 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+21:04:46 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+21:04:48 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+21:04:49 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:60:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+21:05:00 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+21:09:02 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+21:09:02 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+21:09:04 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+21:09:04 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:60:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+21:09:14 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+21:13:50 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+21:13:50 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+21:13:53 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+21:13:53 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:60:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+21:14:06 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+21:20:54 **** Clean-only build of configuration x86_64-debug for project calc_client ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+21:20:54 **** Clean-only build of configuration x86_64-debug for project calc_server ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+21:20:56 **** Build of configuration x86_64-debug for project calc_client ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_client.d,-MT,build/x86_64-debug/src/calc_client.o -o build/x86_64-debug/src/calc_client.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_client.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_client   build/x86_64-debug/src/calc_client.o  
+21:20:56 **** Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/calc_server.d,-MT,build/x86_64-debug/src/calc_server.o -o build/x86_64-debug/src/calc_server.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/calc_server.c
+src/calc_server.c: In function 'main':
+src/calc_server.c:60:2: warning: implicit declaration of function 'ChannelDestroyed' [-Wimplicit-function-declaration]
+  ChannelDestroyed(chid);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/calc_server   build/x86_64-debug/src/calc_server.o  
+21:34:39 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+21:36:27 **** Incremental Build of configuration x86_64-debug for project calc_server ****
+make -j12 all 
+make: Nothing to be done for 'all'.

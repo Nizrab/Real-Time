@@ -1,0 +1,1230 @@
+12:36:05 **** Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+12:36:14 **** Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+12:36:31 **** Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+19:09:49 **** Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:29:12: warning: implicit declaration of function 'name_open' [-Wimplicit-function-declaration]
+     coid = name_open("controller", 0);
+            ^
+src/des_inputs.c:40:45: error: 'controller_response' undeclared (first use in this function)
+     if(MsgSend(coid,&person,sizeof(person),&controller_response,sizeof(controller_response)) == -1){
+                                             ^
+src/des_inputs.c:40:45: note: each undeclared identifier is reported only once for each function it appears in
+src/des_inputs.c:75:5: warning: implicit declaration of function 'name_close' [-Wimplicit-function-declaration]
+     name_close(coid);
+     ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+19:10:37 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:29:12: warning: implicit declaration of function 'name_open' [-Wimplicit-function-declaration]
+     coid = name_open("controller", 0);
+            ^
+src/des_inputs.c:75:5: warning: implicit declaration of function 'name_close' [-Wimplicit-function-declaration]
+     name_close(coid);
+     ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+19:56:20 **** Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+src/des_display.c: In function 'main':
+src/des_display.c:36:2: error: unknown type name 'name_attach_t'
+  name_attach_t *attach;
+  ^
+src/des_display.c:39:5: error: 'chid' undeclared (first use in this function)
+     chid = ChannelCreate(0);
+     ^
+src/des_display.c:39:5: note: each undeclared identifier is reported only once for each function it appears in
+src/des_display.c:36:17: warning: unused variable 'attach' [-Wunused-variable]
+  name_attach_t *attach;
+                 ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_display.o' failed
+make: *** [build/x86_64-debug/src/des_display.o] Error 1
+19:57:05 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+src/des_display.c: In function 'main':
+src/des_display.c:39:8: error: 'chid' undeclared (first use in this function)
+     if(chid == -1){
+        ^
+src/des_display.c:39:8: note: each undeclared identifier is reported only once for each function it appears in
+src/des_display.c:35:17: warning: unused variable 'attach' [-Wunused-variable]
+  name_attach_t *attach;
+                 ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_display.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_display.o' failed
+11:32:39 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+src/des_display.c: In function 'main':
+src/des_display.c:39:8: error: 'chid' undeclared (first use in this function)
+     if(chid == -1){
+        ^
+src/des_display.c:39:8: note: each undeclared identifier is reported only once for each function it appears in
+src/des_display.c:35:17: warning: unused variable 'attach' [-Wunused-variable]
+  name_attach_t *attach;
+                 ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_display.o' failed
+make: *** [build/x86_64-debug/src/des_display.o] Error 1
+13:23:31 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+src/des_display.c: In function 'main':
+src/des_display.c:39:8: error: 'chid' undeclared (first use in this function)
+     if(chid == -1){
+        ^
+src/des_display.c:39:8: note: each undeclared identifier is reported only once for each function it appears in
+src/des_display.c:35:17: warning: unused variable 'attach' [-Wunused-variable]
+  name_attach_t *attach;
+                 ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_display.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_display.o' failed
+13:32:25 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+src/des_display.c: In function 'main':
+src/des_display.c:47:25: error: 'chid' undeclared (first use in this function)
+      rcvid = MsgReceive(chid,&person,sizeof(person),NULL);
+                         ^
+src/des_display.c:47:25: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_display.o' failed
+make: *** [build/x86_64-debug/src/des_display.o] Error 1
+13:32:58 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+src/des_display.c: In function 'main':
+src/des_display.c:65:20: error: 'chid' undeclared (first use in this function)
+     ChannelDestroy(chid);
+                    ^
+src/des_display.c:65:20: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_display.o' failed
+make: *** [build/x86_64-debug/src/des_display.o] Error 1
+13:33:09 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+13:37:31 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:16:20 **** Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:61:3: error: unknown type name 'name_attach_t'
+   name_attach_t *attach;
+   ^
+src/des_controller.c:73:4: error: 'display_pid' undeclared (first use in this function)
+    display_pid = atoi(argv[1]);
+    ^
+src/des_controller.c:73:4: note: each undeclared identifier is reported only once for each function it appears in
+src/des_controller.c:80:3: error: 'inputs_chid' undeclared (first use in this function)
+   inputs_chid = ChannelCreate(0);
+   ^
+src/des_controller.c:89:3: error: 'display_coid' undeclared (first use in this function)
+   display_coid = ConnectAttach(ND_LOCAL_NODE, display_pid, 1,
+   ^
+src/des_controller.c:108:4: error: 'rcvid' undeclared (first use in this function)
+    rcvid = MsgReceive(inputs_chid, &person, sizeof(person), NULL);
+    ^
+src/des_controller.c:61:18: warning: unused variable 'attach' [-Wunused-variable]
+   name_attach_t *attach;
+                  ^
+src/des_controller.c: In function 'left_scan':
+src/des_controller.c:147:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'guard_left_unlock':
+src/des_controller.c:165:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'guard_left_lock':
+src/des_controller.c:192:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'left_open':
+src/des_controller.c:219:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:236:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c:249:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+src/des_controller.c: In function 'weight_scan':
+src/des_controller.c:268:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'right_scan':
+src/des_controller.c:296:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'guard_right_unlock':
+src/des_controller.c:312:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'right_open':
+src/des_controller.c:339:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'right_close':
+src/des_controller.c:356:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'guard_right_lock':
+src/des_controller.c:388:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+14:16:58 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:72:4: error: 'display_pid' undeclared (first use in this function)
+    display_pid = atoi(argv[1]);
+    ^
+src/des_controller.c:72:4: note: each undeclared identifier is reported only once for each function it appears in
+src/des_controller.c:79:3: error: 'inputs_chid' undeclared (first use in this function)
+   inputs_chid = ChannelCreate(0);
+   ^
+src/des_controller.c:88:3: error: 'display_coid' undeclared (first use in this function)
+   display_coid = ConnectAttach(ND_LOCAL_NODE, display_pid, 1,
+   ^
+src/des_controller.c:107:4: error: 'rcvid' undeclared (first use in this function)
+    rcvid = MsgReceive(inputs_chid, &person, sizeof(person), NULL);
+    ^
+src/des_controller.c:60:18: warning: variable 'attach' set but not used [-Wunused-but-set-variable]
+   name_attach_t *attach;
+                  ^
+src/des_controller.c: In function 'left_scan':
+src/des_controller.c:146:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'guard_left_unlock':
+src/des_controller.c:164:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'guard_left_lock':
+src/des_controller.c:191:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'left_open':
+src/des_controller.c:218:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:235:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c:248:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+src/des_controller.c: In function 'weight_scan':
+src/des_controller.c:267:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'right_scan':
+src/des_controller.c:295:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'guard_right_unlock':
+src/des_controller.c:311:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'right_open':
+src/des_controller.c:338:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'right_close':
+src/des_controller.c:355:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'guard_right_lock':
+src/des_controller.c:387:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+14:18:45 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:71:3: error: 'coid' undeclared (first use in this function)
+   coid = name_open("display_point", 0);
+   ^
+src/des_controller.c:71:3: note: each undeclared identifier is reported only once for each function it appears in
+src/des_controller.c:72:7: error: 'attatch' undeclared (first use in this function)
+   if (attatch == NULL) {
+       ^
+src/des_controller.c:78:3: error: 'display_coid' undeclared (first use in this function)
+   display_coid = ConnectAttach(ND_LOCAL_NODE, display_pid, 1,
+   ^
+src/des_controller.c:78:47: error: 'display_pid' undeclared (first use in this function)
+   display_coid = ConnectAttach(ND_LOCAL_NODE, display_pid, 1,
+                                               ^
+src/des_controller.c:97:4: error: 'rcvid' undeclared (first use in this function)
+    rcvid = MsgReceive(inputs_chid, &person, sizeof(person), NULL);
+    ^
+src/des_controller.c:97:23: error: 'inputs_chid' undeclared (first use in this function)
+    rcvid = MsgReceive(inputs_chid, &person, sizeof(person), NULL);
+                       ^
+src/des_controller.c:60:18: warning: variable 'attach' set but not used [-Wunused-but-set-variable]
+   name_attach_t *attach;
+                  ^
+src/des_controller.c: In function 'left_scan':
+src/des_controller.c:136:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'guard_left_unlock':
+src/des_controller.c:154:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'guard_left_lock':
+src/des_controller.c:181:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'left_open':
+src/des_controller.c:208:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:225:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c:238:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+src/des_controller.c: In function 'weight_scan':
+src/des_controller.c:257:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'right_scan':
+src/des_controller.c:285:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'guard_right_unlock':
+src/des_controller.c:301:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'right_open':
+src/des_controller.c:328:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'right_close':
+src/des_controller.c:345:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'guard_right_lock':
+src/des_controller.c:377:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+14:18:59 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:71:3: error: 'coid' undeclared (first use in this function)
+   coid = name_open("display_point", 0);
+   ^
+src/des_controller.c:71:3: note: each undeclared identifier is reported only once for each function it appears in
+src/des_controller.c:78:3: error: 'display_coid' undeclared (first use in this function)
+   display_coid = ConnectAttach(ND_LOCAL_NODE, display_pid, 1,
+   ^
+src/des_controller.c:78:47: error: 'display_pid' undeclared (first use in this function)
+   display_coid = ConnectAttach(ND_LOCAL_NODE, display_pid, 1,
+                                               ^
+src/des_controller.c:97:4: error: 'rcvid' undeclared (first use in this function)
+    rcvid = MsgReceive(inputs_chid, &person, sizeof(person), NULL);
+    ^
+src/des_controller.c:97:23: error: 'inputs_chid' undeclared (first use in this function)
+    rcvid = MsgReceive(inputs_chid, &person, sizeof(person), NULL);
+                       ^
+src/des_controller.c: In function 'left_scan':
+src/des_controller.c:136:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'guard_left_unlock':
+src/des_controller.c:154:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'guard_left_lock':
+src/des_controller.c:181:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'left_open':
+src/des_controller.c:208:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:225:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c:238:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+src/des_controller.c: In function 'weight_scan':
+src/des_controller.c:257:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'right_scan':
+src/des_controller.c:285:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'guard_right_unlock':
+src/des_controller.c:301:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'right_open':
+src/des_controller.c:328:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'right_close':
+src/des_controller.c:345:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'guard_right_lock':
+src/des_controller.c:377:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+14:19:53 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:73:3: error: 'display_coid' undeclared (first use in this function)
+   display_coid = ConnectAttach(ND_LOCAL_NODE, display_pid, 1,
+   ^
+src/des_controller.c:73:3: note: each undeclared identifier is reported only once for each function it appears in
+src/des_controller.c:73:47: error: 'display_pid' undeclared (first use in this function)
+   display_coid = ConnectAttach(ND_LOCAL_NODE, display_pid, 1,
+                                               ^
+src/des_controller.c:92:23: error: 'inputs_chid' undeclared (first use in this function)
+    rcvid = MsgReceive(inputs_chid, &person, sizeof(person), NULL);
+                       ^
+src/des_controller.c:62:7: warning: variable 'coid' set but not used [-Wunused-but-set-variable]
+   int coid,rcvid;
+       ^
+src/des_controller.c: In function 'left_scan':
+src/des_controller.c:131:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'guard_left_unlock':
+src/des_controller.c:149:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'guard_left_lock':
+src/des_controller.c:176:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'left_open':
+src/des_controller.c:203:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:220:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c:233:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+src/des_controller.c: In function 'weight_scan':
+src/des_controller.c:252:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'right_scan':
+src/des_controller.c:280:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'guard_right_unlock':
+src/des_controller.c:296:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'right_open':
+src/des_controller.c:323:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'right_close':
+src/des_controller.c:340:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'guard_right_lock':
+src/des_controller.c:372:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+14:19:59 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:74:3: error: 'display_coid' undeclared (first use in this function)
+   display_coid = ConnectAttach(ND_LOCAL_NODE, display_pid, 1,
+   ^
+src/des_controller.c:74:3: note: each undeclared identifier is reported only once for each function it appears in
+src/des_controller.c:74:47: error: 'display_pid' undeclared (first use in this function)
+   display_coid = ConnectAttach(ND_LOCAL_NODE, display_pid, 1,
+                                               ^
+src/des_controller.c:93:23: error: 'inputs_chid' undeclared (first use in this function)
+    rcvid = MsgReceive(inputs_chid, &person, sizeof(person), NULL);
+                       ^
+src/des_controller.c:62:7: warning: variable 'coid' set but not used [-Wunused-but-set-variable]
+   int coid;
+       ^
+src/des_controller.c: In function 'left_scan':
+src/des_controller.c:132:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'guard_left_unlock':
+src/des_controller.c:150:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'guard_left_lock':
+src/des_controller.c:177:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'left_open':
+src/des_controller.c:204:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:221:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c:234:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+src/des_controller.c: In function 'weight_scan':
+src/des_controller.c:253:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'right_scan':
+src/des_controller.c:281:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'guard_right_unlock':
+src/des_controller.c:297:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'right_open':
+src/des_controller.c:324:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'right_close':
+src/des_controller.c:341:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'guard_right_lock':
+src/des_controller.c:373:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+14:22:33 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:78:7: error: 'display_coid' undeclared (first use in this function)
+   if (display_coid == -1) {
+       ^
+src/des_controller.c:78:7: note: each undeclared identifier is reported only once for each function it appears in
+src/des_controller.c: In function 'left_scan':
+src/des_controller.c:130:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'guard_left_unlock':
+src/des_controller.c:148:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'guard_left_lock':
+src/des_controller.c:175:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'left_open':
+src/des_controller.c:202:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:219:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c:232:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+src/des_controller.c: In function 'weight_scan':
+src/des_controller.c:251:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'right_scan':
+src/des_controller.c:279:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'guard_right_unlock':
+src/des_controller.c:295:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'right_open':
+src/des_controller.c:322:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'right_close':
+src/des_controller.c:339:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+src/des_controller.c: In function 'guard_right_lock':
+src/des_controller.c:371:7: error: 'debugStates' undeclared (first use in this function)
+       debugStates[person.state]);
+       ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+14:23:16 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:78:7: error: 'display_coid' undeclared (first use in this function)
+   if (display_coid == -1) {
+       ^
+src/des_controller.c:78:7: note: each undeclared identifier is reported only once for each function it appears in
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:232:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+14:23:25 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:78:7: error: 'display_coid' undeclared (first use in this function)
+   if (display_coid == -1) {
+       ^
+src/des_controller.c:78:7: note: each undeclared identifier is reported only once for each function it appears in
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:232:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+14:23:32 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:94:16: error: 'display_coid' undeclared (first use in this function)
+    if (MsgSend(display_coid, &person, sizeof(person), &display,
+                ^
+src/des_controller.c:94:16: note: each undeclared identifier is reported only once for each function it appears in
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:225:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+14:24:10 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:78:7: error: 'display_coid' undeclared (first use in this function)
+   if (display_coid == -1) {
+       ^
+src/des_controller.c:78:7: note: each undeclared identifier is reported only once for each function it appears in
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:227:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+14:24:15 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:221:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+14:24:36 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:29:12: warning: implicit declaration of function 'name_open' [-Wimplicit-function-declaration]
+     coid = name_open("controller", 0);
+            ^
+src/des_inputs.c:75:5: warning: implicit declaration of function 'name_close' [-Wimplicit-function-declaration]
+     name_close(coid);
+     ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+14:24:45 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:24:47 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+14:31:35 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+14:31:48 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:31:50 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:31:51 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:34:05 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+src/des_display.c: In function 'main':
+src/des_display.c:49:75: error: expected ')' before '{' token
+      if ((rcvid = MsgReceive(attach->chid, &person, sizeof(person), NULL)){}
+                                                                           ^
+src/des_display.c:52:9: error: expected expression before '}' token
+         }
+         ^
+src/des_display.c:61:13: error: break statement not within loop or switch
+             break;
+             ^
+src/des_display.c: At top level:
+src/des_display.c:65:25: error: expected ')' before numeric constant
+     name_detach(attach, 0);
+                         ^
+src/des_display.c:66:5: error: expected identifier or '(' before 'return'
+     return EXIT_SUCCESS;
+     ^
+src/des_display.c:67:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_display.o' failed
+make: *** [build/x86_64-debug/src/des_display.o] Error 1
+14:34:07 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+src/des_display.c: In function 'main':
+src/des_display.c:49:75: error: expected ')' before '{' token
+      if ((rcvid = MsgReceive(attach->chid, &person, sizeof(person), NULL)){
+                                                                           ^
+src/des_display.c:63:5: error: expected expression before '}' token
+     }
+     ^
+src/des_display.c:33:13: warning: unused variable 'display' [-Wunused-variable]
+     Display display;
+             ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_display.o' failed
+make: *** [build/x86_64-debug/src/des_display.o] Error 1
+14:34:25 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+14:34:30 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:39:10 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+14:41:58 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:221:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+14:42:46 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:221:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+14:45:47 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+14:46:43 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:29:12: warning: implicit declaration of function 'name_open' [-Wimplicit-function-declaration]
+     coid = name_open("controller", 0);
+            ^
+src/des_inputs.c:75:5: warning: implicit declaration of function 'name_close' [-Wimplicit-function-declaration]
+     name_close(coid);
+     ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+14:47:47 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:66:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   if (attach = name_attach(NULL, "controller", 0)) == NULL) {
+   ^
+src/des_controller.c:66:52: error: expected expression before '==' token
+   if (attach = name_attach(NULL, "controller", 0)) == NULL) {
+                                                    ^
+src/des_controller.c:66:59: error: expected statement before ')' token
+   if (attach = name_attach(NULL, "controller", 0)) == NULL) {
+                                                           ^
+src/des_controller.c:70:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   if(coid = name_open("display_point", 0)) == -1){
+   ^
+src/des_controller.c:70:44: error: expected expression before '==' token
+   if(coid = name_open("display_point", 0)) == -1){
+                                            ^
+src/des_controller.c:70:49: error: expected statement before ')' token
+   if(coid = name_open("display_point", 0)) == -1){
+                                                 ^
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:219:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+14:48:09 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:219:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+14:48:36 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:49:04 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:87:4: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    if (rcvid= MsgReceive(attach->chid,&person,sizeof(person),NULL)) == -1) { /* receive message from client */
+    ^
+src/des_controller.c:87:69: error: expected expression before '==' token
+    if (rcvid= MsgReceive(attach->chid,&person,sizeof(person),NULL)) == -1) { /* receive message from client */
+                                                                     ^
+src/des_controller.c:87:74: error: expected statement before ')' token
+    if (rcvid= MsgReceive(attach->chid,&person,sizeof(person),NULL)) == -1) { /* receive message from client */
+                                                                          ^
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:219:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+14:49:10 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:219:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+14:49:13 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:217:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+14:49:15 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:49:16 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:02:59 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:218:5: warning: "/*" within comment [-Wcomment]
+     /*printf("[Controller] -  Transitioned from %s to %s\n",
+     ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+15:03:01 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:03:03 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:03:14 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:03:15 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:03:17 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:07:02 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:69:8: error: 'attach' undeclared (first use in this function)
+   if ((attach = name_attach(NULL, "controller", 0)) == NULL) {
+        ^
+src/des_controller.c:69:8: note: each undeclared identifier is reported only once for each function it appears in
+src/des_controller.c:69:17: warning: implicit declaration of function 'name_attach' [-Wimplicit-function-declaration]
+   if ((attach = name_attach(NULL, "controller", 0)) == NULL) {
+                 ^
+src/des_controller.c:74:7: error: 'coid' undeclared (first use in this function)
+   if((coid = name_open("display_point", 0)) == -1){
+       ^
+src/des_controller.c:74:14: warning: implicit declaration of function 'name_open' [-Wimplicit-function-declaration]
+   if((coid = name_open("display_point", 0)) == -1){
+              ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+15:07:22 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:66:8: error: 'attach' undeclared (first use in this function)
+   if ((attach = name_attach(NULL, "controller", 0)) == NULL) {
+        ^
+src/des_controller.c:66:8: note: each undeclared identifier is reported only once for each function it appears in
+src/des_controller.c:71:7: error: 'coid' undeclared (first use in this function)
+   if((coid = name_open("display_point", 0)) == -1){
+       ^
+src/des_controller.c: In function 'left_scan':
+src/des_controller.c:123:4: error: 'person' undeclared (first use in this function)
+    person.state = prev_state;
+    ^
+src/des_controller.c: In function 'guard_left_unlock':
+src/des_controller.c:138:4: error: 'person' undeclared (first use in this function)
+    person.state = START_STATE;
+    ^
+src/des_controller.c: In function 'guard_left_lock':
+src/des_controller.c:173:4: error: 'person' undeclared (first use in this function)
+    person.state = START_STATE;
+    ^
+src/des_controller.c: In function 'left_open':
+src/des_controller.c:208:4: error: 'person' undeclared (first use in this function)
+    person.state = START_STATE;
+    ^
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:229:4: error: 'person' undeclared (first use in this function)
+    person.state = START_STATE;
+    ^
+src/des_controller.c: In function 'weight_scan':
+src/des_controller.c:269:4: error: 'person' undeclared (first use in this function)
+    person.state = START_STATE;
+    ^
+src/des_controller.c: In function 'right_scan':
+src/des_controller.c:307:4: error: 'person' undeclared (first use in this function)
+    person.state = prev_state;
+    ^
+src/des_controller.c: In function 'guard_right_unlock':
+src/des_controller.c:321:4: error: 'person' undeclared (first use in this function)
+    person.state = START_STATE;
+    ^
+src/des_controller.c: In function 'right_open':
+src/des_controller.c:357:4: error: 'person' undeclared (first use in this function)
+    person.state = START_STATE;
+    ^
+src/des_controller.c: In function 'right_close':
+src/des_controller.c:378:4: error: 'person' undeclared (first use in this function)
+    person.state = START_STATE;
+    ^
+src/des_controller.c: In function 'guard_right_lock':
+src/des_controller.c:417:4: error: 'person' undeclared (first use in this function)
+    person.state = START_STATE;
+    ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+15:07:37 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:66:8: error: 'attach' undeclared (first use in this function)
+   if ((attach = name_attach(NULL, "controller", 0)) == NULL) {
+        ^
+src/des_controller.c:66:8: note: each undeclared identifier is reported only once for each function it appears in
+src/des_controller.c:71:7: error: 'coid' undeclared (first use in this function)
+   if((coid = name_open("display_point", 0)) == -1){
+       ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+15:07:47 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:71:7: error: 'coid' undeclared (first use in this function)
+   if((coid = name_open("display_point", 0)) == -1){
+       ^
+src/des_controller.c:71:7: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+15:07:56 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:86:10: warning: 'inputs_chid' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    rcvid = MsgReceive(inputs_chid, &person, sizeof(person), NULL);
+          ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+15:08:29 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:110:3: warning: 'inputs_chid' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   ChannelDestroy(inputs_chid);/* destroy channel */
+   ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+15:09:09 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:59:7: warning: unused variable 'inputs_chid' [-Wunused-variable]
+   int inputs_chid; //channel id
+       ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+15:09:23 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+15:09:31 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:09:32 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:09:33 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:00:50 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:73:16: error: expected ')' before 'display_coid'
+   printf("%s\n"display_coid);
+                ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+16:01:04 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:73:16: error: expected ')' before 'display_coid'
+   printf("%s\n"display_coid);
+                ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+16:01:19 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+16:01:22 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+16:01:22 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:27:47 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+src/des_inputs.c: In function 'getUsrPrompt':
+src/des_inputs.c:79:8: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+     if(strcmp(input,inMessage[LS_INPUT]) == 0){
+        ^
+src/des_inputs.c:83:13: warning: implicit declaration of function 'strncmp' [-Wimplicit-function-declaration]
+     else if(strncmp(input,inMessage[RS_INPUT],strlen(inMessage[RS_INPUT])) == 0){
+             ^
+src/des_inputs.c:83:47: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+     else if(strncmp(input,inMessage[RS_INPUT],strlen(inMessage[RS_INPUT])) == 0){
+                                               ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+16:28:13 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:24:12: warning: implicit declaration of function 'name_open' [-Wimplicit-function-declaration]
+     coid = name_open("controller", 0);
+            ^
+src/des_inputs.c:26:7: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+       printf("Error On Coid\n");
+       ^
+src/des_inputs.c:27:7: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+       exit(EXIT_FAILURE);
+       ^
+src/des_inputs.c:27:12: error: 'EXIT_FAILURE' undeclared (first use in this function)
+       exit(EXIT_FAILURE);
+            ^
+src/des_inputs.c:27:12: note: each undeclared identifier is reported only once for each function it appears in
+src/des_inputs.c:35:8: warning: implicit declaration of function 'MsgSend' [-Wimplicit-function-declaration]
+     if(MsgSend(coid,&person,sizeof(person),&display,sizeof(display)) == -1){
+        ^
+src/des_inputs.c:46:9: warning: implicit declaration of function 'scanf' [-Wimplicit-function-declaration]
+         scanf("%s",&input);
+         ^
+src/des_inputs.c:69:5: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+     sleep(2);
+     ^
+src/des_inputs.c:70:5: warning: implicit declaration of function 'name_close' [-Wimplicit-function-declaration]
+     name_close(coid);
+     ^
+src/des_inputs.c:71:12: error: 'EXIT_SUCCESS' undeclared (first use in this function)
+     return EXIT_SUCCESS;
+            ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+16:28:20 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+16:28:30 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+16:31:15 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+16:31:53 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+16:34:07 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+16:34:09 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:38:00 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:38:01 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+16:38:02 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+16:38:45 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:38:47 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:38:48 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:55:28 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+16:57:27 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+16:57:29 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:57:30 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+17:00:01 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+17:00:03 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+17:00:04 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+17:02:38 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:37:9: error: 'argc' undeclared (first use in this function)
+     if (argc != 2) {
+         ^
+src/des_inputs.c:37:9: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+17:02:43 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+17:04:36 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+17:04:38 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+17:04:39 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+17:06:15 **** Clean-only build of configuration x86_64-debug for project des_controller ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+17:06:16 **** Clean-only build of configuration x86_64-debug for project des_display ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+17:06:16 **** Clean-only build of configuration x86_64-debug for project des_inputs ****
+make -j12 clean 
+rm -fr build/x86_64-debug
+17:06:26 **** Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+17:06:28 **** Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+17:06:30 **** Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  

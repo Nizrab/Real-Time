@@ -1,0 +1,937 @@
+12:30:11 **** Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+12:30:37 **** Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-waker.d,-MT,build/x86_64-debug/src/thread-waker.o -o build/x86_64-debug/src/thread-waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-waker.cpp
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread-waker.o  
+12:31:05 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+13:42:31 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+13:43:48 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+13:43:51 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+13:43:58 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:28:28: error: cannot convert 'pthread_attr_t {aka _thread_attr}' to 'pthread_attr_t* {aka _thread_attr*}' for argument '1' to 'int pthread_attr_init(pthread_attr_t*)'
+    pthread_attr_init( attr );
+                            ^
+src/thread-factory.cpp:30:32: error: 'foo' was not declared in this scope
+    pthread_create( NULL, attr, foo, NULL);
+                                ^
+src/thread-factory.cpp:8:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+src/thread-factory.cpp: At global scope:
+src/thread-factory.cpp:48:15: error: invalid use of type 'void' in parameter declaration
+ void foo(void arg) {
+               ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+13:45:58 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:13:24: error: conversion from 'int' to non-scalar type 'pthread_attr_t {aka _thread_attr}' requested
+  pthread_attr_t attr = 1;
+                        ^
+src/thread-factory.cpp:30:25: error: cannot convert 'pthread_attr_t {aka _thread_attr}' to 'pthread_attr_t* {aka _thread_attr*}' for argument '1' to 'int pthread_attr_init(pthread_attr_t*)'
+   pthread_attr_init(attr);
+                         ^
+src/thread-factory.cpp:32:39: error: cannot convert 'pthread_attr_t {aka _thread_attr}' to 'const pthread_attr_t* {aka const _thread_attr*}' for argument '2' to 'int pthread_create(pthread_t*, const pthread_attr_t*, void* (*)(void*), void*)'
+   pthread_create(NULL, attr, foo, NULL);
+                                       ^
+src/thread-factory.cpp:11:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+13:46:33 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:32:39: error: cannot convert 'pthread_attr_t {aka _thread_attr}' to 'const pthread_attr_t* {aka const _thread_attr*}' for argument '2' to 'int pthread_create(pthread_t*, const pthread_attr_t*, void* (*)(void*), void*)'
+   pthread_create(NULL, attr, foo, NULL);
+                                       ^
+src/thread-factory.cpp:11:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+13:46:46 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:32:41: error: invalid conversion from 'void (*)(void*)' to 'void* (*)(void*)' [-fpermissive]
+   pthread_create(NULL, &attr, &foo, NULL);
+                                         ^
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/__mutex_base:17:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/mutex:176,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/__locale:18,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ios:216,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:38,
+                 from src/thread-factory.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/pthread.h:197:12: note:   initializing argument 3 of 'int pthread_create(pthread_t*, const pthread_attr_t*, void* (*)(void*), void*)'
+ extern int pthread_create(pthread_t *__thr, const pthread_attr_t *__attr, void *(*__start_routine)(void *), void *__arg);
+            ^
+src/thread-factory.cpp:11:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+13:49:34 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'void* foo(void*)':
+src/thread-factory.cpp:8:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:11:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+13:49:40 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+13:52:26 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'void* foo(void*)':
+src/thread-factory.cpp:8:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:26:2: error: 'sem' was not declared in this scope
+  sem = sem_open("Lab04_Semaphore", O_CREATE, S_IWOTH);
+  ^
+src/thread-factory.cpp:26:36: error: 'O_CREATE' was not declared in this scope
+  sem = sem_open("Lab04_Semaphore", O_CREATE, S_IWOTH);
+                                    ^
+src/thread-factory.cpp:26:46: error: 'S_IWOTH' was not declared in this scope
+  sem = sem_open("Lab04_Semaphore", O_CREATE, S_IWOTH);
+                                              ^
+src/thread-factory.cpp:26:53: error: 'sem_open' was not declared in this scope
+  sem = sem_open("Lab04_Semaphore", O_CREATE, S_IWOTH);
+                                                     ^
+src/thread-factory.cpp:11:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+13:53:00 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'void* foo(void*)':
+src/thread-factory.cpp:11:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:29:2: error: 'sem' was not declared in this scope
+  sem = sem_open("Lab04_Semaphore", O_CREATE, S_IWOTH);
+  ^
+src/thread-factory.cpp:29:36: error: 'O_CREATE' was not declared in this scope
+  sem = sem_open("Lab04_Semaphore", O_CREATE, S_IWOTH);
+                                    ^
+src/thread-factory.cpp:29:46: error: 'S_IWOTH' was not declared in this scope
+  sem = sem_open("Lab04_Semaphore", O_CREATE, S_IWOTH);
+                                              ^
+src/thread-factory.cpp:14:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+13:53:33 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'void* foo(void*)':
+src/thread-factory.cpp:11:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:29:2: error: 'sem' was not declared in this scope
+  sem = sem_open("Lab04_Semaphore", O_CREATE, S_IWOTH, 0);
+  ^
+src/thread-factory.cpp:29:36: error: 'O_CREATE' was not declared in this scope
+  sem = sem_open("Lab04_Semaphore", O_CREATE, S_IWOTH, 0);
+                                    ^
+src/thread-factory.cpp:29:46: error: 'S_IWOTH' was not declared in this scope
+  sem = sem_open("Lab04_Semaphore", O_CREATE, S_IWOTH, 0);
+                                              ^
+src/thread-factory.cpp:14:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+13:54:10 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'void* foo(void*)':
+src/thread-factory.cpp:11:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:29:2: error: 'sem' was not declared in this scope
+  sem = sem_open("Lab04_Semaphore", O_CREATE, S_IWOTH, 0);
+  ^
+src/thread-factory.cpp:29:36: error: 'O_CREATE' was not declared in this scope
+  sem = sem_open("Lab04_Semaphore", O_CREATE, S_IWOTH, 0);
+                                    ^
+src/thread-factory.cpp:14:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+13:54:17 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'void* foo(void*)':
+src/thread-factory.cpp:11:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:29:2: error: 'sem' was not declared in this scope
+  sem = sem_open("Lab04_Semaphore", O_CREATE, S_IWOTH);
+  ^
+src/thread-factory.cpp:29:36: error: 'O_CREATE' was not declared in this scope
+  sem = sem_open("Lab04_Semaphore", O_CREATE, S_IWOTH);
+                                    ^
+src/thread-factory.cpp:14:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+13:55:25 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'void* foo(void*)':
+src/thread-factory.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:30:2: error: 'sem' was not declared in this scope
+  sem = sem_open("Lab04_Semaphore", O_CREATE, S_IWOTH);
+  ^
+src/thread-factory.cpp:30:36: error: 'O_CREATE' was not declared in this scope
+  sem = sem_open("Lab04_Semaphore", O_CREATE, S_IWOTH);
+                                    ^
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+13:57:38 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'void* foo(void*)':
+src/thread-factory.cpp:13:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:31:2: error: 'sem' was not declared in this scope
+  sem = sem_open("Lab04_Semaphore", O_CREAT, S_IWOTH, 0);
+  ^
+src/thread-factory.cpp:16:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+13:58:48 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'void* foo(void*)':
+src/thread-factory.cpp:13:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:31:6: error: no match for 'operator=' (operand types are 'sem_t {aka _sync}' and 'sem_t* {aka _sync*}')
+  sem = sem_open("Lab04_Semaphore", O_CREAT, S_IWOTH, 0);
+      ^
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/sys/platform.h:395:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/unistd.h:23,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/__config:25,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:37,
+                 from src/thread-factory.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/sys/types.h:163:9: note: candidate: _sync& _sync::operator=(const _sync&)
+ typedef __SYNC_T sync_t;
+         ^
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/sys/types.h:163:9: note:   no known conversion for argument 1 from 'sem_t* {aka _sync*}' to 'const _sync&'
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/sys/types.h:163:9: note: candidate: _sync& _sync::operator=(_sync&&)
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/sys/types.h:163:9: note:   no known conversion for argument 1 from 'sem_t* {aka _sync*}' to '_sync&&'
+src/thread-factory.cpp:16:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+13:59:03 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'void* foo(void*)':
+src/thread-factory.cpp:13:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:31:22: error: conversion from 'sem_t* {aka _sync*}' to non-scalar type 'sem_t {aka _sync}' requested
+  sem_t sem = sem_open("Lab04_Semaphore", O_CREAT, S_IWOTH, 0);
+                      ^
+src/thread-factory.cpp:16:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+14:00:51 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'void* foo(void*)':
+src/thread-factory.cpp:13:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:16:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+14:00:58 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:44:39 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:44:41 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:47:31 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'void* foo(void*)':
+src/thread-factory.cpp:13:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:16:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+16:47:36 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:51:23 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'void* foo(void*)':
+src/thread-factory.cpp:13:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:16:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+16:51:25 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:01:45 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'void* foo(void*)':
+src/thread-factory.cpp:14:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+20:02:53 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:03:20 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'void* foo(void*)':
+src/thread-factory.cpp:14:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:18:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+10:50:57 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'void* foo(void*)':
+src/thread-factory.cpp:14:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+10:51:13 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'void* foo(void*)':
+src/thread-factory.cpp:14:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:18:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+10:59:50 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:35:35: error: too few arguments to function 'int pthread_create(pthread_t*, const pthread_attr_t*, void* (*)(void*), void*)'
+   pthread_create(NULL, &attr, NULL);
+                                   ^
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/__mutex_base:17:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/mutex:176,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/__locale:18,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ios:216,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:38,
+                 from src/thread-factory.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/pthread.h:197:12: note: declared here
+ extern int pthread_create(pthread_t *__thr, const pthread_attr_t *__attr, void *(*__start_routine)(void *), void *__arg);
+            ^
+src/thread-factory.cpp:39:2: error: 'x' was not declared in this scope
+  x = sem_close(sem);
+  ^
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+src/thread-factory.cpp: At global scope:
+src/thread-factory.cpp:45:22: error: 'voidi' was not declared in this scope
+ void* threadFunction(voidi *arg){
+                      ^
+src/thread-factory.cpp:45:29: error: 'arg' was not declared in this scope
+ void* threadFunction(voidi *arg){
+                             ^
+src/thread-factory.cpp:45:33: error: expected ',' or ';' before '{' token
+ void* threadFunction(voidi *arg){
+                                 ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+11:57:22 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:35:32: error: 'threadFunction' was not declared in this scope
+   pthread_create(NULL, &attr, &threadFunction, NULL);
+                                ^
+src/thread-factory.cpp:40:27: error: 'x' was not declared in this scope
+  cout << "Sem_close: " << x <<endl;
+                           ^
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+src/thread-factory.cpp: At global scope:
+src/thread-factory.cpp:44:22: error: 'voidi' was not declared in this scope
+ void* threadFunction(voidi *arg){
+                      ^
+src/thread-factory.cpp:44:29: error: 'arg' was not declared in this scope
+ void* threadFunction(voidi *arg){
+                             ^
+src/thread-factory.cpp:44:33: error: expected ',' or ';' before '{' token
+ void* threadFunction(voidi *arg){
+                                 ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+11:57:41 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp:12:22: error: 'voidi' was not declared in this scope
+ void* threadFunction(voidi *arg){
+                      ^
+src/thread-factory.cpp:12:29: error: 'arg' was not declared in this scope
+ void* threadFunction(voidi *arg){
+                             ^
+src/thread-factory.cpp:12:33: error: expected ',' or ';' before '{' token
+ void* threadFunction(voidi *arg){
+                                 ^
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:39:52: error: cannot convert 'void**' to 'void* (*)(void*)' for argument '3' to 'int pthread_create(pthread_t*, const pthread_attr_t*, void* (*)(void*), void*)'
+   pthread_create(NULL, &attr, &threadFunction, NULL);
+                                                    ^
+src/thread-factory.cpp:44:27: error: 'x' was not declared in this scope
+  cout << "Sem_close: " << x <<endl;
+                           ^
+src/thread-factory.cpp:19:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+11:58:27 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:36:52: error: invalid conversion from 'void (*)(void*)' to 'void* (*)(void*)' [-fpermissive]
+   pthread_create(NULL, &attr, &threadFunction, NULL);
+                                                    ^
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/__mutex_base:17:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/mutex:176,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/__locale:18,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ios:216,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:38,
+                 from src/thread-factory.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/pthread.h:197:12: note:   initializing argument 3 of 'int pthread_create(pthread_t*, const pthread_attr_t*, void* (*)(void*), void*)'
+ extern int pthread_create(pthread_t *__thr, const pthread_attr_t *__attr, void *(*__start_routine)(void *), void *__arg);
+            ^
+src/thread-factory.cpp:41:27: error: 'x' was not declared in this scope
+  cout << "Sem_close: " << x <<endl;
+                           ^
+src/thread-factory.cpp:16:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+src/thread-factory.cpp: In function 'void* threadFunction(void*)':
+src/thread-factory.cpp:45:31: error: ambiguating new declaration of 'void* threadFunction(void*)'
+ void* threadFunction(void *arg){
+                               ^
+src/thread-factory.cpp:11:6: note: old declaration 'void threadFunction(void*)'
+ void threadFunction(void *arg);
+      ^
+src/thread-factory.cpp:47:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+11:58:49 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:40:27: error: 'x' was not declared in this scope
+  cout << "Sem_close: " << x <<endl;
+                           ^
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+src/thread-factory.cpp: In function 'void* threadFunction(void*)':
+src/thread-factory.cpp:46:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+11:59:04 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+src/thread-factory.cpp: In function 'void* threadFunction(void*)':
+src/thread-factory.cpp:46:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+13:08:37 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:41:36: error: too many arguments to function 'int sem_unlink(const char*)'
+  i = sem_unlink("Lab04_Semaphore",i);
+                                    ^
+In file included from src/thread-factory.cpp:4:0:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/semaphore.h:59:12: note: declared here
+ extern int sem_unlink(const char *__name);
+            ^
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-factory.o' failed
+make: *** [build/x86_64-debug/src/thread-factory.o] Error 1
+13:08:48 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-waker.d,-MT,build/x86_64-debug/src/thread-waker.o -o build/x86_64-debug/src/thread-waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-waker.cpp
+src/thread-waker.cpp: In function 'int main()':
+src/thread-waker.cpp:17:6: error: no match for 'operator<<' (operand types are 'std::__1::istream {aka std::__1::basic_istream<char>}' and 'int')
+   cin<<numWakeup;
+      ^
+src/thread-waker.cpp:17:6: note: candidate: operator<<(int, int) <built-in>
+src/thread-waker.cpp:17:6: note:   no known conversion for argument 1 from 'std::__1::istream {aka std::__1::basic_istream<char>}' to 'int'
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/istream:163:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:40,
+                 from src/thread-waker.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:1094:1: note: candidate: template<class _CharT, class _Traits, class _Yp> std::__1::basic_ostream<_CharT, _Traits>& std::__1::operator<<(std::__1::basic_ostream<_CharT, _Traits>&, const std::__1::shared_ptr<_Yp>&)
+ operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p)
+ ^
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:1094:1: note:   template argument deduction/substitution failed:
+src/thread-waker.cpp:17:8: note:   'std::__1::istream {aka std::__1::basic_istream<char>}' is not derived from 'std::__1::basic_ostream<_CharT, _Traits>'
+   cin<<numWakeup;
+        ^
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/istream:163:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:40,
+                 from src/thread-waker.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:1077:1: note: candidate: template<class _CharT, class _Traits, class _Allocator> std::__1::basic_ostream<_CharT, _Traits>& std::__1::operator<<(std::__1::basic_ostream<_CharT, _Traits>&, const std::__1::basic_string<_CharT, _Traits, _Allocator>&)
+ operator<<(basic_ostream<_CharT, _Traits>& __os,
+ ^
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:1077:1: note:   template argument deduction/substitution failed:
+src/thread-waker.cpp:17:8: note:   'std::__1::istream {aka std::__1::basic_istream<char>}' is not derived from 'std::__1::basic_ostream<_CharT, _Traits>'
+   cin<<numWakeup;
+        ^
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/istream:163:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:40,
+                 from src/thread-waker.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:1101:1: note: candidate: template<class _CharT, class _Traits, long unsigned int _Size> std::__1::basic_ostream<_CharT, _Traits>& std::__1::operator<<(std::__1::basic_ostream<_CharT, _Traits>&, const std::__1::bitset<_Size>&)
+ operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x)
+ ^
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:1101:1: note:   template argument deduction/substitution failed:
+src/thread-waker.cpp:17:8: note:   'std::__1::istream {aka std::__1::basic_istream<char>}' is not derived from 'std::__1::basic_ostream<_CharT, _Traits>'
+   cin<<numWakeup;
+        ^
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/istream:163:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:40,
+                 from src/thread-waker.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:778:1: note: candidate: template<class _CharT, class _Traits> std::__1::basic_ostream<_CharT, _Traits>& std::__1::operator<<(std::__1::basic_ostream<_CharT, _Traits>&, _CharT)
+ operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c)
+ ^
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:778:1: note:   template argument deduction/substitution failed:
+src/thread-waker.cpp:17:8: note:   'std::__1::istream {aka std::__1::basic_istream<char>}' is not derived from 'std::__1::basic_ostream<_CharT, _Traits>'
+   cin<<numWakeup;
+        ^
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/istream:163:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:40,
+                 from src/thread-waker.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:785:1: note: candidate: template<class _CharT, class _Traits> std::__1::basic_ostream<_CharT, _Traits>& std::__1::operator<<(std::__1::basic_ostream<_CharT, _Traits>&, char)
+ operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn)
+ ^
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:785:1: note:   template argument deduction/substitution failed:
+src/thread-waker.cpp:17:8: note:   'std::__1::istream {aka std::__1::basic_istream<char>}' is not derived from 'std::__1::basic_ostream<_CharT, _Traits>'
+   cin<<numWakeup;
+        ^
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/istream:163:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:40,
+                 from src/thread-waker.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:818:1: note: candidate: template<class _Traits> std::__1::basic_ostream<char, _Traits>& std::__1::operator<<(std::__1::basic_ostream<char, _Traits>&, char)
+ operator<<(basic_ostream<char, _Traits>& __os, char __c)
+ ^
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:818:1: note:   template argument deduction/substitution failed:
+src/thread-waker.cpp:17:8: note:   'std::__1::istream {aka std::__1::basic_istream<char>}' is not derived from 'std::__1::basic_ostream<char, _Traits>'
+   cin<<numWakeup;
+        ^
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/istream:163:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:40,
+                 from src/thread-waker.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:825:1: note: candidate: template<class _Traits> std::__1::basic_ostream<char, _Traits>& std::__1::operator<<(std::__1::basic_ostream<char, _Traits>&, signed char)
+ operator<<(basic_ostream<char, _Traits>& __os, signed char __c)
+ ^
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:825:1: note:   template argument deduction/substitution failed:
+src/thread-waker.cpp:17:8: note:   'std::__1::istream {aka std::__1::basic_istream<char>}' is not derived from 'std::__1::basic_ostream<char, _Traits>'
+   cin<<numWakeup;
+        ^
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/istream:163:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:40,
+                 from src/thread-waker.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:832:1: note: candidate: template<class _Traits> std::__1::basic_ostream<char, _Traits>& std::__1::operator<<(std::__1::basic_ostream<char, _Traits>&, unsigned char)
+ operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c)
+ ^
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:832:1: note:   template argument deduction/substitution failed:
+src/thread-waker.cpp:17:8: note:   'std::__1::istream {aka std::__1::basic_istream<char>}' is not derived from 'std::__1::basic_ostream<char, _Traits>'
+   cin<<numWakeup;
+        ^
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/istream:163:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:40,
+                 from src/thread-waker.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:839:1: note: candidate: template<class _CharT, class _Traits> std::__1::basic_ostream<_CharT, _Traits>& std::__1::operator<<(std::__1::basic_ostream<_CharT, _Traits>&, const _CharT*)
+ operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str)
+ ^
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:839:1: note:   template argument deduction/substitution failed:
+src/thread-waker.cpp:17:8: note:   'std::__1::istream {aka std::__1::basic_istream<char>}' is not derived from 'std::__1::basic_ostream<_CharT, _Traits>'
+   cin<<numWakeup;
+        ^
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/istream:163:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:40,
+                 from src/thread-waker.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:846:1: note: candidate: template<class _CharT, class _Traits> std::__1::basic_ostream<_CharT, _Traits>& std::__1::operator<<(std::__1::basic_ostream<_CharT, _Traits>&, const char*)
+ operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn)
+ ^
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:846:1: note:   template argument deduction/substitution failed:
+src/thread-waker.cpp:17:8: note:   'std::__1::istream {aka std::__1::basic_istream<char>}' is not derived from 'std::__1::basic_ostream<_CharT, _Traits>'
+   cin<<numWakeup;
+        ^
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/istream:163:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:40,
+                 from src/thread-waker.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:892:1: note: candidate: template<class _Traits> std::__1::basic_ostream<char, _Traits>& std::__1::operator<<(std::__1::basic_ostream<char, _Traits>&, const char*)
+ operator<<(basic_ostream<char, _Traits>& __os, const char* __str)
+ ^
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:892:1: note:   template argument deduction/substitution failed:
+src/thread-waker.cpp:17:8: note:   'std::__1::istream {aka std::__1::basic_istream<char>}' is not derived from 'std::__1::basic_ostream<char, _Traits>'
+   cin<<numWakeup;
+        ^
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/istream:163:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:40,
+                 from src/thread-waker.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:899:1: note: candidate: template<class _Traits> std::__1::basic_ostream<char, _Traits>& std::__1::operator<<(std::__1::basic_ostream<char, _Traits>&, const signed char*)
+ operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str)
+ ^
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:899:1: note:   template argument deduction/substitution failed:
+src/thread-waker.cpp:17:8: note:   'std::__1::istream {aka std::__1::basic_istream<char>}' is not derived from 'std::__1::basic_ostream<char, _Traits>'
+   cin<<numWakeup;
+        ^
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/istream:163:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:40,
+                 from src/thread-waker.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:907:1: note: candidate: template<class _Traits> std::__1::basic_ostream<char, _Traits>& std::__1::operator<<(std::__1::basic_ostream<char, _Traits>&, const unsigned char*)
+ operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str)
+ ^
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:907:1: note:   template argument deduction/substitution failed:
+src/thread-waker.cpp:17:8: note:   'std::__1::istream {aka std::__1::basic_istream<char>}' is not derived from 'std::__1::basic_ostream<char, _Traits>'
+   cin<<numWakeup;
+        ^
+In file included from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/istream:163:0,
+                 from C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/iostream:40,
+                 from src/thread-waker.cpp:1:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:1067:1: note: candidate: template<class _Stream, class _Tp> typename std::__1::enable_if<((! std::__1::is_lvalue_reference<_Tp>::value) && std::__1::is_base_of<std::__1::ios_base, _Stream>::value), _Stream&&>::type std::__1::operator<<(_Stream&&, const _Tp&)
+ operator<<(_Stream&& __os, const _Tp& __x)
+ ^
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:1067:1: note:   template argument deduction/substitution failed:
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream: In substitution of 'template<class _Stream, class _Tp> typename std::__1::enable_if<((! std::__1::is_lvalue_reference<_Tp>::value) && std::__1::is_base_of<std::__1::ios_base, _Stream>::value), _Stream&&>::type std::__1::operator<<(_Stream&&, const _Tp&) [with _Stream = std::__1::basic_istream<char>&; _Tp = int]':
+src/thread-waker.cpp:17:8:   required from here
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:1067:1: error: no type named 'type' in 'struct std::__1::enable_if<false, std::__1::basic_istream<char>&>'
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:1086:1: note: candidate: template<class _CharT, class _Traits> std::__1::basic_ostream<_CharT, _Traits>& std::__1::operator<<(std::__1::basic_ostream<_CharT, _Traits>&, const std::__1::error_code&)
+ operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec)
+ ^
+C:/Users/Barzi/qnx700/target/qnx7/usr/include/c++/v1/ostream:1086:1: note:   template argument deduction/substitution failed:
+src/thread-waker.cpp:17:8: note:   'std::__1::istream {aka std::__1::basic_istream<char>}' is not derived from 'std::__1::basic_ostream<_CharT, _Traits>'
+   cin<<numWakeup;
+        ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1plus caught signal 1
+make: *** [build/x86_64-debug/src/thread-waker.o] Error 1
+Makefile:58: recipe for target 'build/x86_64-debug/src/thread-waker.o' failed
+13:09:11 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-waker.d,-MT,build/x86_64-debug/src/thread-waker.o -o build/x86_64-debug/src/thread-waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-waker.cpp
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread-waker.o  
+13:17:05 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+13:17:13 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+13:26:43 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+13:27:47 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+13:30:22 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+13:31:32 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+13:54:51 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+13:55:18 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:39:16 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:39:21 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+14:39:53 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+14:40:48 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+14:42:06 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+14:43:04 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+14:43:18 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+14:43:55 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:44:55 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:45:00 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+14:45:42 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:49:44 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+14:50:04 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+14:51:28 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+14:52:25 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:04:13 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+15:05:25 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+15:09:38 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+15:10:02 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:12:03 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:12:10 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:12:26 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:32:46 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:32:50 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:33:43 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:33:45 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:34:05 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:34:07 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:25:39 **** Incremental Build of configuration x86_64-debug for project thread-factory ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-factory.d,-MT,build/x86_64-debug/src/thread-factory.o -o build/x86_64-debug/src/thread-factory.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-factory.cpp
+src/thread-factory.cpp: In function 'int main()':
+src/thread-factory.cpp:15:6: warning: unused variable 'hRun' [-Wunused-variable]
+  int hRun = 0;
+      ^
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-factory   build/x86_64-debug/src/thread-factory.o  
+14:25:58 **** Incremental Build of configuration x86_64-debug for project thread-waker ****
+make -j12 all 
+qcc -lang-c++ -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/thread-waker.d,-MT,build/x86_64-debug/src/thread-waker.o -o build/x86_64-debug/src/thread-waker.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/thread-waker.cpp
+qcc -lang-c++ -Vgcc_ntox86_64 -o build/x86_64-debug/thread-waker   build/x86_64-debug/src/thread-waker.o  

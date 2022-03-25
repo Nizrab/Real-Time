@@ -1,0 +1,1146 @@
+17:33:24 **** Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+17:33:43 **** Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+17:33:59 **** Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+18:07:45 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+src/des_display.c: In function 'main':
+src/des_display.c:9:2: error: unknown type name 'person_t'
+  person_t person;
+  ^
+src/des_display.c:10:2: error: unknown type name 'ctrl_resp_t'
+  ctrl_resp_t response;
+  ^
+src/des_display.c:10:14: warning: unused variable 'response' [-Wunused-variable]
+  ctrl_resp_t response;
+              ^
+src/des_display.c:9:11: warning: unused variable 'person' [-Wunused-variable]
+  person_t person;
+           ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_display.o' failed
+make: *** [build/x86_64-debug/src/des_display.o] Error 1
+18:50:26 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+13:06:06 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:44:35 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:19:25: error: 'argv' undeclared (first use in this function)
+  pid_t serverpid = atoi(argv[1]);
+                         ^
+src/des_inputs.c:19:25: note: each undeclared identifier is reported only once for each function it appears in
+src/des_inputs.c:17:6: warning: variable 'coid' set but not used [-Wunused-but-set-variable]
+  int coid;
+      ^
+src/des_inputs.c:15:9: warning: unused variable 'person' [-Wunused-variable]
+  Person person;
+         ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+14:45:19 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:17:6: warning: variable 'coid' set but not used [-Wunused-but-set-variable]
+  int coid;
+      ^
+src/des_inputs.c:15:9: warning: unused variable 'person' [-Wunused-variable]
+  Person person;
+         ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+14:46:29 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:21:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(coid = ConnectAttach(ND_LOCAL_NODE, serverpid, chid, _NTO_SIDE_CHANNEL, 0)) == -1){
+  ^
+src/des_inputs.c:21:81: error: expected expression before '==' token
+  if(coid = ConnectAttach(ND_LOCAL_NODE, serverpid, chid, _NTO_SIDE_CHANNEL, 0)) == -1){
+                                                                                 ^
+src/des_inputs.c:21:86: error: expected statement before ')' token
+  if(coid = ConnectAttach(ND_LOCAL_NODE, serverpid, chid, _NTO_SIDE_CHANNEL, 0)) == -1){
+                                                                                      ^
+src/des_inputs.c:15:9: warning: unused variable 'person' [-Wunused-variable]
+  Person person;
+         ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+14:46:48 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:15:9: warning: unused variable 'person' [-Wunused-variable]
+  Person person;
+         ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+15:10:04 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:28:8: error: 'EXIT_FALURE' undeclared (first use in this function)
+   exit(EXIT_FALURE);
+        ^
+src/des_inputs.c:28:8: note: each undeclared identifier is reported only once for each function it appears in
+src/des_inputs.c:15:9: warning: unused variable 'person' [-Wunused-variable]
+  Person person;
+         ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+15:10:20 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:28:10: error: 'EXIT_FALURE' undeclared (first use in this function)
+   return EXIT_FALURE;
+          ^
+src/des_inputs.c:28:10: note: each undeclared identifier is reported only once for each function it appears in
+src/des_inputs.c:15:9: warning: unused variable 'person' [-Wunused-variable]
+  Person person;
+         ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+15:10:33 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:15:9: warning: unused variable 'person' [-Wunused-variable]
+  Person person;
+         ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+15:11:51 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:31:23 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:34:8: error: 'true' undeclared (first use in this function)
+  while(true){
+        ^
+src/des_inputs.c:34:8: note: each undeclared identifier is reported only once for each function it appears in
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+src/des_inputs.c:15:10: warning: unused variable 'display' [-Wunused-variable]
+  Display display;
+          ^
+src/des_inputs.c:14:9: warning: unused variable 'person' [-Wunused-variable]
+  Person person;
+         ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+15:31:49 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:34:8: error: 'True' undeclared (first use in this function)
+  while(True){
+        ^
+src/des_inputs.c:34:8: note: each undeclared identifier is reported only once for each function it appears in
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+src/des_inputs.c:15:10: warning: unused variable 'display' [-Wunused-variable]
+  Display display;
+          ^
+src/des_inputs.c:14:9: warning: unused variable 'person' [-Wunused-variable]
+  Person person;
+         ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+15:32:26 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:34:8: error: 'true' undeclared (first use in this function)
+  while(true){
+        ^
+src/des_inputs.c:34:8: note: each undeclared identifier is reported only once for each function it appears in
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+src/des_inputs.c:15:10: warning: unused variable 'display' [-Wunused-variable]
+  Display display;
+          ^
+src/des_inputs.c:14:9: warning: unused variable 'person' [-Wunused-variable]
+  Person person;
+         ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+15:32:29 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:34:8: error: 'True' undeclared (first use in this function)
+  while(True){
+        ^
+src/des_inputs.c:34:8: note: each undeclared identifier is reported only once for each function it appears in
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+src/des_inputs.c:15:10: warning: unused variable 'display' [-Wunused-variable]
+  Display display;
+          ^
+src/des_inputs.c:14:9: warning: unused variable 'person' [-Wunused-variable]
+  Person person;
+         ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+15:32:35 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+src/des_inputs.c:15:10: warning: unused variable 'display' [-Wunused-variable]
+  Display display;
+          ^
+src/des_inputs.c:14:9: warning: unused variable 'person' [-Wunused-variable]
+  Person person;
+         ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+15:52:41 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:6:5: error: unknown type name 'Person'
+     Person person;
+     ^
+src/des_controller.c:18:12: warning: implicit declaration of function 'ChannelCreate' [-Wimplicit-function-declaration]
+     chid = ChannelCreate(0);
+            ^
+src/des_controller.c:20:27: error: 'errorMessages' undeclared (first use in this function)
+             printf("%s\n",errorMessages[CTRL_ERR_CHANNEL_CREATE]);
+                           ^
+src/des_controller.c:20:27: note: each undeclared identifier is reported only once for each function it appears in
+src/des_controller.c:20:41: error: 'CTRL_ERR_CHANNEL_CREATE' undeclared (first use in this function)
+             printf("%s\n",errorMessages[CTRL_ERR_CHANNEL_CREATE]);
+                                         ^
+src/des_controller.c:7:15: warning: unused variable 'rcvid' [-Wunused-variable]
+     int chid, rcvid;
+               ^
+src/des_controller.c:6:12: warning: unused variable 'person' [-Wunused-variable]
+     Person person;
+            ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+15:53:12 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c:3:17: fatal error: des.h: No such file or directory
+compilation terminated.
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+15:53:22 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+In file included from src/des_controller.c:3:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_controller.c: In function 'main':
+src/des_controller.c:18:12: warning: implicit declaration of function 'ChannelCreate' [-Wimplicit-function-declaration]
+     chid = ChannelCreate(0);
+            ^
+src/des_controller.c:7:15: warning: unused variable 'rcvid' [-Wunused-variable]
+     int chid, rcvid;
+               ^
+src/des_controller.c:6:12: warning: unused variable 'person' [-Wunused-variable]
+     Person person;
+            ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+15:53:26 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:54:26 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:57:42 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:39:18: error: 'msg_send' undeclared (first use in this function)
+   MsgSend(coid, &msg_send, sizeof(msg_send), &msg_receive, sizeof(msg_receive));
+                  ^
+src/des_inputs.c:39:18: note: each undeclared identifier is reported only once for each function it appears in
+src/des_inputs.c:39:47: error: 'msg_receive' undeclared (first use in this function)
+   MsgSend(coid, &msg_send, sizeof(msg_send), &msg_receive, sizeof(msg_receive));
+                                               ^
+src/des_inputs.c:40:6: error: expected expression before ')' token
+   if(){
+      ^
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+src/des_inputs.c:15:10: warning: unused variable 'display' [-Wunused-variable]
+  Display display;
+          ^
+src/des_inputs.c:14:9: warning: variable 'person' set but not used [-Wunused-but-set-variable]
+  Person person;
+         ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+15:58:13 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:40:6: error: expected expression before ')' token
+   if(){
+      ^
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+15:58:29 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+16:27:52 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+16:30:59 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:29:2: error: expected ';' before 'if'
+  if(() == -1){
+  ^
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+16:31:04 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:29:2: error: expected ';' before 'if'
+  if(coid == -1){
+  ^
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+16:31:13 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+16:31:51 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:19:2: error: unknown type name 'String'
+  String msgg;
+  ^
+src/des_inputs.c:44:6: error: expected expression before ')' token
+   if() == -1){
+      ^
+src/des_inputs.c:44:13: error: expected statement before ')' token
+   if() == -1){
+             ^
+src/des_inputs.c:19:9: warning: unused variable 'msgg' [-Wunused-variable]
+  String msgg;
+         ^
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+16:32:15 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:43:74: error: expected ')' before ';' token
+   msgg = MsgSend(coid, &person, sizeof(person), &display, sizeof(display);
+                                                                          ^
+src/des_inputs.c:62:2: error: expected ';' before '}' token
+  }
+  ^
+src/des_inputs.c:19:6: warning: variable 'msgg' set but not used [-Wunused-but-set-variable]
+  int msgg;
+      ^
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+16:32:31 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:43:73: error: expected ')' before ';' token
+   msg = MsgSend(coid, &person, sizeof(person), &display, sizeof(display);
+                                                                         ^
+src/des_inputs.c:62:2: error: expected ';' before '}' token
+  }
+  ^
+src/des_inputs.c:19:6: warning: variable 'msg' set but not used [-Wunused-but-set-variable]
+  int msg;
+      ^
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+16:32:37 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+16:45:59 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+In file included from src/des_controller.c:3:0:
+src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/des.h:107:2: note: (near initialization for 'outMessage')
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+17:21:25 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+17:23:13 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+src/des_inputs.c: In function 'getUsrPrompt':
+src/des_inputs.c:66:29: error: 'IN_LS' undeclared (first use in this function)
+  if(strncmp(input,inMessage[IN_LS],strlen(inMessage[IN_LS])) == 0){
+                             ^
+src/des_inputs.c:66:29: note: each undeclared identifier is reported only once for each function it appears in
+src/des_inputs.c:67:20: error: 'ST_LS' undeclared (first use in this function)
+    person->state = ST_LS;
+                    ^
+src/des_inputs.c:68:4: warning: implicit declaration of function 'prompt_for_id' [-Wimplicit-function-declaration]
+    prompt_for_id(person);
+    ^
+src/des_inputs.c:81:1: error: expected declaration or statement at end of input
+ }
+ ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+17:24:00 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+src/des_inputs.c: In function 'getUsrPrompt':
+src/des_inputs.c:81:1: error: expected declaration or statement at end of input
+ }
+ ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+17:24:16 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+18:19:16 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+18:25:20 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+11:25:26 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+13:30:25 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+In file included from src/des_display.c:6:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_display.c: In function 'main':
+src/des_display.c:11:6: warning: unused variable 'rcvid' [-Wunused-variable]
+  int rcvid;
+      ^
+src/des_display.c:10:6: warning: unused variable 'chid' [-Wunused-variable]
+  int chid;
+      ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+13:35:23 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+In file included from src/des_display.c:6:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_display.c: In function 'main':
+src/des_display.c:14:6: error: redeclaration of 'chid' with no linkage
+  int chid = ChannelCreate(0);
+      ^
+src/des_display.c:12:6: note: previous declaration of 'chid' was here
+  int chid;
+      ^
+src/des_display.c:11:10: warning: unused variable 'display' [-Wunused-variable]
+  Display display;
+          ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_display.o' failed
+make: *** [build/x86_64-debug/src/des_display.o] Error 1
+13:35:30 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+In file included from src/des_display.c:6:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_display.c: In function 'main':
+src/des_display.c:11:10: warning: unused variable 'display' [-Wunused-variable]
+  Display display;
+          ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+13:35:48 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+13:35:54 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+13:35:55 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+In file included from src/des_inputs.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+13:36:46 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+In file included from src/des_display.c:6:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_display.c: In function 'main':
+src/des_display.c:11:10: warning: unused variable 'display' [-Wunused-variable]
+  Display display;
+          ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+13:37:11 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+In file included from src/des_display.c:6:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+src/des_display.c: In function 'main':
+src/des_display.c:31:12: error: 'Person {aka struct <anonymous>}' has no member named 'errMsg'
+   if(person.errMsg != NULL){
+            ^
+src/des_display.c:11:10: warning: unused variable 'display' [-Wunused-variable]
+  Display display;
+          ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_display.o' failed
+make: *** [build/x86_64-debug/src/des_display.o] Error 1
+13:37:16 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+In file included from src/des_display.c:6:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+13:38:01 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+In file included from src/des_display.c:6:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+13:38:18 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+In file included from src/des_display.c:6:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+13:38:27 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+In file included from src/des_display.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+13:38:48 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+13:39:03 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+In file included from src/des_display.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+13:40:06 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+In file included from src/des_display.c:8:0:
+src/../../des_controller/src/des.h:107:2: warning: excess elements in array initializer
+  "Exiting Door System."//EXIT OUTPUT
+  ^
+src/../../des_controller/src/des.h:107:2: note: (near initialization for 'outMessage')
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+13:40:44 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+13:40:47 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+13:40:53 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+13:41:18 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+13:41:57 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+13:42:26 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+13:43:32 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:28:2: error: 'cpid' undeclared (first use in this function)
+  cpid = atoi(argv[1]); //gets pid
+  ^
+src/des_inputs.c:28:2: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+13:43:40 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:16:8: warning: variable 'cpid' set but not used [-Wunused-but-set-variable]
+  pid_t cpid;
+        ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+13:44:21 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+13:44:25 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+13:50:33 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+14:40:35 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+src/des_display.c: In function 'main':
+src/des_display.c:31:9: warning: implicit declaration of function 'state' [-Wimplicit-function-declaration]
+         state(&person);
+         ^
+src/des_display.c: At top level:
+src/des_display.c:45:6: warning: conflicting types for 'state'
+ void state(Person* person){
+      ^
+src/des_display.c:31:9: note: previous implicit declaration of 'state' was here
+         state(&person);
+         ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+14:41:16 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+16:01:11 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+14:31:47 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:66:9: warning: unused variable 'pid' [-Wunused-variable]
+   pid_t pid; //process id
+         ^
+src/des_controller.c: In function 'left_scan':
+src/des_controller.c:147:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c:147:6: note: each undeclared identifier is reported only once for each function it appears in
+src/des_controller.c: In function 'guard_left_unlock':
+src/des_controller.c:162:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'guard_left_lock':
+src/des_controller.c:197:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'left_open':
+src/des_controller.c:232:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'left_close':
+src/des_controller.c:253:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'weight_scan':
+src/des_controller.c:293:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'right_scan':
+src/des_controller.c:331:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'guard_right_unlock':
+src/des_controller.c:345:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'right_open':
+src/des_controller.c:381:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'right_close':
+src/des_controller.c:402:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+src/des_controller.c: In function 'guard_right_lock':
+src/des_controller.c:441:6: error: 'debugStates' undeclared (first use in this function)
+      debugStates[person.state]);
+      ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_controller.o' failed
+make: *** [build/x86_64-debug/src/des_controller.o] Error 1
+14:32:19 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:66:9: warning: unused variable 'pid' [-Wunused-variable]
+   pid_t pid; //process id
+         ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+14:32:24 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:62:28: error: unknown type name 'ws'
+         scanf("%s",&input);ws
+                            ^
+src/des_inputs.c:64:29: error: expected ')' before '&' token
+         getUsrPrompt(input, &person);
+                             ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+14:32:26 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+14:33:27 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+14:33:28 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:33:31 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:34:04 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:34:05 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:34:06 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+14:34:07 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+19:09:43 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:29:12: warning: implicit declaration of function 'name_open' [-Wimplicit-function-declaration]
+     coid = name_open("controller", 0);
+            ^
+src/des_inputs.c:40:45: error: 'controller_response' undeclared (first use in this function)
+     if(MsgSend(coid,&person,sizeof(person),&controller_response,sizeof(controller_response)) == -1){
+                                             ^
+src/des_inputs.c:40:45: note: each undeclared identifier is reported only once for each function it appears in
+src/des_inputs.c:75:5: warning: implicit declaration of function 'name_close' [-Wimplicit-function-declaration]
+     name_close(coid);
+     ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+11:32:53 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:29:12: warning: implicit declaration of function 'name_open' [-Wimplicit-function-declaration]
+     coid = name_open("controller", 0);
+            ^
+src/des_inputs.c:40:45: error: 'controller_response' undeclared (first use in this function)
+     if(MsgSend(coid,&person,sizeof(person),&controller_response,sizeof(controller_response)) == -1){
+                                             ^
+src/des_inputs.c:40:45: note: each undeclared identifier is reported only once for each function it appears in
+src/des_inputs.c:75:5: warning: implicit declaration of function 'name_close' [-Wimplicit-function-declaration]
+     name_close(coid);
+     ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+11:33:09 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:38:45: error: 'controller_response' undeclared (first use in this function)
+     if(MsgSend(coid,&person,sizeof(person),&controller_response,sizeof(controller_response)) == -1){
+                                             ^
+src/des_inputs.c:38:45: note: each undeclared identifier is reported only once for each function it appears in
+src/des_inputs.c: In function 'getUsrPrompt':
+src/des_inputs.c:81:8: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+     if(strcmp(input,inMessage[LS_INPUT]) == 0){
+        ^
+src/des_inputs.c:85:13: warning: implicit declaration of function 'strncmp' [-Wimplicit-function-declaration]
+     else if(strncmp(input,inMessage[RS_INPUT],strlen(inMessage[RS_INPUT])) == 0){
+             ^
+src/des_inputs.c:85:47: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+     else if(strncmp(input,inMessage[RS_INPUT],strlen(inMessage[RS_INPUT])) == 0){
+                                               ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_inputs.o' failed
+make: *** [build/x86_64-debug/src/des_inputs.o] Error 1
+11:33:41 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+src/des_inputs.c: In function 'main':
+src/des_inputs.c:29:12: warning: implicit declaration of function 'name_open' [-Wimplicit-function-declaration]
+     coid = name_open("controller", 0);
+            ^
+src/des_inputs.c:75:5: warning: implicit declaration of function 'name_close' [-Wimplicit-function-declaration]
+     name_close(coid);
+     ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+14:30:39 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+src/des_display.c: In function 'main':
+src/des_display.c:48:25: error: 'attach' undeclared (first use in this function)
+      rcvid = MsgReceive(attach->chid, &person, sizeof(person), NULL);
+                         ^
+src/des_display.c:48:25: note: each undeclared identifier is reported only once for each function it appears in
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_display.o' failed
+make: *** [build/x86_64-debug/src/des_display.o] Error 1
+14:31:04 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+src/des_display.c: In function 'main':
+src/des_display.c:39:5: error: unknown type name 'name_attach_t'
+     name_attach_t *attach;
+     ^
+src/des_display.c:49:31: error: request for member 'chid' in something not a structure or union
+      rcvid = MsgReceive(attach->chid, &person, sizeof(person), NULL);
+                               ^
+cc: C:/Users/Barzi/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/des_display.o' failed
+make: *** [build/x86_64-debug/src/des_display.o] Error 1
+14:31:21 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+src/des_display.c: In function 'main':
+src/des_display.c:38:7: warning: 'chid' is used uninitialized in this function [-Wuninitialized]
+     if(chid == -1){
+       ^
+src/des_display.c:46:14: warning: 'attach' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      rcvid = MsgReceive(attach->chid, &person, sizeof(person), NULL);
+              ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+15:15:18 **** Incremental Build of configuration x86_64-debug for project des_controller ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_controller.d,-MT,build/x86_64-debug/src/des_controller.o -o build/x86_64-debug/src/des_controller.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_controller.c
+src/des_controller.c: In function 'main':
+src/des_controller.c:66:9: warning: unused variable 'pid' [-Wunused-variable]
+   pid_t pid; //process id
+         ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_controller   build/x86_64-debug/src/des_controller.o  
+15:15:19 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_inputs.d,-MT,build/x86_64-debug/src/des_inputs.o -o build/x86_64-debug/src/des_inputs.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_inputs.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_inputs   build/x86_64-debug/src/des_inputs.o  
+15:15:21 **** Incremental Build of configuration x86_64-debug for project des_inputs ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:15:22 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/des_display.d,-MT,build/x86_64-debug/src/des_display.o -o build/x86_64-debug/src/des_display.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/des_display.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/des_display   build/x86_64-debug/src/des_display.o  
+15:15:24 **** Incremental Build of configuration x86_64-debug for project des_display ****
+make -j12 all 
+make: Nothing to be done for 'all'.
